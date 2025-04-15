@@ -1,0 +1,38 @@
+site_name: EHFAKE - Documentação
+site_description: Documentação técnica do projeto EHFAKE
+site_author: Lab Livre - UnB
+repo_url: https://github.com/EH-FAKE/docs
+repo_name: EHFAKE - Docs
+
+site_url: https://eh-fake.github.io/docs/  
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Início: index.md
+  - Guia de Contribuição:
+    - Política de Branches: guia-de-contribuicao/politica-de-branches.md
+    - Política de Commits: guia-de-contribuicao/politica-de-commits.md

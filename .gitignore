@@ -1,0 +1,13 @@
+# Ambiente virtual
+.venv/
+
+# Build gerado pelo MkDocs
+site/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+
+# IDE/Editor
+.vscode/
+.idea/
