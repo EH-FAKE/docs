@@ -33,6 +33,9 @@ plugins:
 
 nav:
   - Início: index.md
+  - Backlog: backlog.md
   - Guia de Contribuição:
     - Política de Branches: guia-de-contribuicao/politica-de-branches.md
     - Política de Commits: guia-de-contribuicao/politica-de-commits.md
+  - Arquitetura de Solução: arquitetura-solucao.md
+
