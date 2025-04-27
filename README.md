@@ -25,19 +25,12 @@ O projeto tem como objetivo: <br>
 O projeto **EhFake** faz uso de tecnologias modernas e ferramentas de código aberto voltadas para o desenvolvimento de aplicações com IA generativa, recuperação de informações e controle de segurança em interações com LLMs. Abaixo estão listadas as principais ferramentas e bibliotecas utilizadas:
 
 - **[RAGFlow](https://github.com/infiniflow/ragflow)**  
-  Framework de orquestração de fluxos RAG (Retrieval-Augmented Generation), facilitando a integração entre fontes de dados e modelos de linguagem.
+  Framework de orquestração de fluxos RAG (Retrieval-Augmented Generation), facilitando a integração entre fontes de dados e modelos de linguagem. Versão mais recente: v0.18.0
 
-- **[Maritaca AI (modelo Sabiá)](https://github.com/maritaca-ai)**  
-  Projeto brasileiro de modelos de linguagem open source, com foco no idioma português. Utilizado como base linguística para análise de notícias.
+  
 
-- **[LlamaIndex](https://github.com/run-llama/llama_index)**  
-  Framework que permite conectar dados externos (como documentos, bancos de dados, APIs) com LLMs, facilitando a construção de pipelines de RAG.
-
-- **[NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)**  
-  Ferramenta desenvolvida pela NVIDIA para garantir segurança e controle no comportamento de modelos de linguagem, adicionando limites (guardrails) às interações.
-
-- **[Streamlit](https://github.com/NVIDIA/NeMo-Guardrails)**  
-  Framework Python para desenvolvimento rápido de interfaces web interativas, utilizado para exibição e teste do protótipo do EhFake.
+- **[NGROK](https://github.com/NGROK)**  
+  Ferramenta que cria túneis seguros para expor servidores locais à internet, muito utilizada para testes de aplicações web, APIs e integração com webhooks. Versão mais recente do SDK Go: v1.7.0
 
 ## Requisitos Funcionais
 
@@ -75,33 +68,24 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-## Pré-requisitos para Rodar o Projeto
+## Pré-requisitos para Rodar o docs do projeto
 
 Para rodar o projeto **EhFake?**, é necessário:
 
 - **Python 3.10+** instalado.
-- Instalar o **MkDocs** e o tema **Material for MkDocs**:
+- Instalar o **MkDocs** 
   ```bash
-    pip install mkdocs mkdocs-material
+    pip install mkdocs
 
 - Clonar o repositório e instalar as dependências: <br>
     ```bash 
     pip install -r requirements.txt
 
-- Ter acesso às ferramentas e bibliotecas utilizadas no projeto:
-    - RAGFlow
-
-    - Maritaca AI
-
-    - LlamaIndex
-
-    - NeMo Guardrails
-
-
-## Estrutura do Projeto
+- Rodar mkdocs serve:
+<br>
+    ```bash 
+    mkdocs serve
 
 ## Contribuição
 
-Para contribuir com o projeto, siga as instruções no [Guia de Contribuição](guia-de-contribuicao/politica-de-branches.md).
-
-
+Para contribuir com o projeto, siga as instruções no [Guia de Contribuição](docs/guia-de-contribuicao)
