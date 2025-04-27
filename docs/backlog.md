@@ -49,6 +49,20 @@ Desenvolver uma tecnologia de Machine Learning para identificar e classificar au
     - ⁠Ver exemplos claros de contribuição com templates no GitHub.
     - ⁠Entender como o modelo de IA está integrado à arquitetura.
 
+## Mapa de Dependências
+
+| Feature | Depende de | Motivo da dependência |
+|:--------|:-----------|:----------------------|
+| FT001.2 – Pipeline de classificação | FT001.1 – Integração RAGFlow + Sabiá | O pipeline depende de um modelo LLM integrado para fazer a classificação. |
+| FT001.3 – Filtro por tema e fonte | FT003.2 – Processamento da planilha de temas | Para filtrar por tema, os temas precisam estar mapeados e processados. |
+| FT002.1 – Interface para busca de notícias | FT003.1 – Coleta contínua de notícias | A interface precisa ter dados disponíveis para busca. |
+| FT002.2 – Input de parâmetros | FT002.1 – Interface para busca | O input de parâmetros é parte funcional da busca. |
+| FT003.3 – Normalização das notícias | FT003.1 – Coleta contínua de notícias | As notícias precisam ser coletadas antes de serem normalizadas. |
+| FT001.4 – Validação com dataset rotulado | FT001.2 – Pipeline de classificação | A validação só faz sentido após o pipeline de classificação estar funcionando. |
+| FT002.3 – Exibir explicações da IA | FT001.2 – Pipeline de classificação | As explicações derivam do raciocínio do pipeline. |
+| FT004.3 – Pós-mortem, changelogs e governança | Todas as funcionalidades entregues | Depende da consolidação do projeto para documentar retroativamente. |
+
+
 ## Roadmap e Releases
 
 ### Release I – 23/03/2025 até 28/04/2025
