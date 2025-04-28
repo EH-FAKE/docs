@@ -82,9 +82,14 @@ Para rodar o projeto **EhFake?**, é necessário:
     pip install -r requirements.txt
 
 - Rodar mkdocs serve:
-<br>
     ```bash 
     mkdocs serve
+
+- Abrir o localhost
+
+    ```bash 
+    http://127.0.0.1:8000/docs/
+
 
 ## Contribuição
 
