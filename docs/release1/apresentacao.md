@@ -49,6 +49,5 @@ A primeira release marcou o início formal do projeto, com a estruturação do a
 - Avanço nas features planejadas para a próxima release.
 - Conclusão e publicação da Release Notes oficial.
 
----
 
 *Data de encerramento da Release I*: **27 de abril de 2025**.
