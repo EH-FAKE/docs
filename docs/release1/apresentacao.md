@@ -49,6 +49,11 @@ A primeira release marcou o início formal do projeto, com a estruturação do a
 - Avanço nas features planejadas para a próxima release.
 - Conclusão e publicação da Release Notes oficial.
 
+## Atas da Release I
+
+- [Ata de 22/04/2025](atas/ata-1.md)
+- [Ata de 27/04/2025](atas/ata-2.md)
+
 ---
 
 *Data de encerramento da Release I*: **27 de abril de 2025**.
