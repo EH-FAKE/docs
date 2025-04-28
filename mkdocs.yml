@@ -25,6 +25,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 plugins:
   - search
@@ -33,9 +35,17 @@ plugins:
 
 nav:
   - Início: index.md
-  - Backlog: backlog.md
+  - Atas de Reunião:
+    - Ata 1: atas/ata-1.md
+    - Ata 2: atas/ata-2.md
   - Guia de Contribuição:
     - Política de Branches: guia-de-contribuicao/politica-de-branches.md
     - Política de Commits: guia-de-contribuicao/politica-de-commits.md
-  - Arquitetura de Solução: arquitetura-solucao.md
+  - Release I:
+    - Apresentação: release1/apresentacao.md
+    - Checklist de Entrega: release1/checklist.md
+    - Arquitetura de Solução: release1/arquitetura-solucao.md
+    - Backlog: release1/backlog.md
+    - Sistema de governança: release1/sistema-governanca.md
+
 
