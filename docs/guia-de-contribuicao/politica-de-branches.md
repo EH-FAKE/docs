@@ -1,58 +1,80 @@
-## Objetivo
+## <center> Guia de Contribuição para branch </center>
 
-Estabelecer um modelo único de ramificação (Git Flow) para todos os repositórios da organização **EHFAKE**, facilitando entregas previsíveis, releases controladas e manutenção de código em produção.
+##  Objetivo
 
-## Modelo Geral
+Estabelecer um modelo padronizado de ramificação baseado no Git Flow para todos os repositórios da organização **EHFAKE**, com o objetivo de garantir:
 
-| Branch       | Função                                 | Origem           | Destino        | Prefixos derivados       |
-| ------------ | -------------------------------------- | ---------------- | -------------- | ------------------------ |
-| **main**     | Código estável (produção)              | release / hotfix | —              | —                        |
-| **develop**  | Integração contínua                    | main             | release        | feature/, bugfix/        |
-| **feature/** | Novas funcionalidades                  | develop          | develop        | `feature/<issue>-<slug>` |
-| **bugfix/**  | Correções em desenvolvimento           | develop          | develop        | `bugfix/<issue>-<slug>`  |
-| **release/** | Preparação de versão                   | develop          | main & develop | `release/vX.Y.Z`         |
-| **hotfix/**  | Correções críticas em produção         | main             | main & develop | `hotfix/vX.Y.Z`          |
-| **docs/**     | Melhoria de documentação (repo *docs*) | main             | main           | `doc/<issue>-<slug>`     |
-| **gh-pages** | Site gerado pelo MkDocs                | mkdocs gh‑deploy | —              | —                        |
+- Entregas previsíveis e organizadas;
+- Releases controladas e auditáveis;
+- Fluxo de desenvolvimento sustentável;
+- Manutenção segura do código em produção.
 
-### Convenções de nomenclatura
+##  Estrutura Geral de Branches
 
-- `<issue>`: número da issue relacionada.
-- `<slug>`: descrição curta em *kebab‑case*.
-- Versões seguem [Semantic Versioning](https://semver.org) `MAJOR.MINOR.PATCH`.
+| Branch        | Função                                     | Origem           | Destino         | Convenção de nomes           |
+| ------------- | ------------------------------------------ | ---------------- | --------------- | ---------------------------- |
+| `main`        | Código estável e versionado (produção)     | release / hotfix | —               | —                            |
+| `develop`     | Integração contínua de funcionalidades     | main             | release         | `feature/*`, `bugfix/*`      |
+| `feature/*`   | Desenvolvimento de novas funcionalidades   | develop          | develop         | `feature/<issue>-<slug>`     |
+| `bugfix/*`    | Correções durante o desenvolvimento        | develop          | develop         | `bugfix/<issue>-<slug>`      |
+| `release/*`   | Preparação de versões                      | develop          | main & develop  | `release/vX.Y.Z`             |
+| `hotfix/*`    | Correções críticas diretamente em produção | main             | main & develop  | `hotfix/vX.Y.Z`              |
+| `doc/*`       | Atualizações de documentação (repo `docs`) | main             | main            | `doc/<issue>-<slug>`         |
+| `gh-pages`    | Site gerado automaticamente pelo MkDocs    | `gh-deploy`      | —               | —                            |
 
-## Fluxo Resumido
+## Convenções de Nomenclatura
 
-1. **Feature**: `feature/123-melhora-busca` ← develop → PR → develop → *Squash & Merge*.
-2. **Release**: `release/v1.2.0` ← develop → PR → main & develop → tag `v1.2.0`.
-3. **Hotfix**: `hotfix/v1.2.1` ← main → PR → main & develop → tag `v1.2.1`.
-4. **Documentação**: `doc/456-guia-instalação` ← main → PR → main → `mkdocs gh-deploy` publica em **gh-pages**.
+- `<issue>`: número da issue vinculada (ex.: `42`);
+- `<slug>`: descrição resumida da mudança em *kebab-case* (ex.: `melhora-autenticacao`);
+- Versões seguem o padrão [Semantic Versioning (SemVer)](https://semver.org): `MAJOR.MINOR.PATCH`.
 
-## Repositórios e Particularidades
+##  Fluxo de Desenvolvimento
 
-| Repositório    | Branches principais | Observações                                                                                                                           |
-| -------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **docs**       | main, gh-pages      | Ciclo de utilização de branches `doc/*` para atualizações referente a documentação que posteriormente seguirá o fluxo de Commit e PR. |
-| **datasets**   | main                | Ciclo Git Flow simplificado; crie branches `feature/*`, `bugfix/*`, etc. Releases de lotes grandes via `release/*`.                   |
-| **fakebuster** | main, develop       | Implementa tratamento ML com RAGFlow. Fluxo Git Flow completo.                                                                        |
-| **backend**    | main, develop       | API e serviços. Fluxo Git Flow completo.                                                                                              |
-| **frontend**   | main, develop       | Interface web. Fluxo Git Flow completo.                                                                                               |
+1. **Feature**  
+   `feature/123-melhora-busca` ← `develop` → PR → `develop` → *Squash & Merge*
 
-## Regras de Merge
+2. **Release**  
+   `release/v1.2.0` ← `develop` → PR → `main` & `develop` → tag `v1.2.0`
 
-- Todo PR necessita **1+ reviewer** e pipeline CI verde.
-- **Squash & Merge** para feature, bugfix e doc.
-- **Merge commit** preservado em release e hotfix para manter histórico explícito.
-- Tags criadas **apenas** em `main`.
+3. **Hotfix**  
+   `hotfix/v1.2.1` ← `main` → PR → `main` & `develop` → tag `v1.2.1`
 
-## Automação
+4. **Documentação**  
+   `doc/456-guia-instalacao` ← `main` → PR → `main` → `mkdocs gh-deploy` → **gh-pages**
 
-- GitHub Actions valida nome de branch usando regex.
-- Releases publicam artefatos correspondentes (containers, pacotes npm, modelos ML).
+## Repositórios e Regras Específicas
 
-## Histórico do documento
+| Repositório     | Branches principais | Observações                                                                                       |
+|------------------|---------------------|---------------------------------------------------------------------------------------------------|
+| **docs**         | `main`, `gh-pages`  | Atualizações feitas via branches `doc/*`. Deploy automático com `mkdocs gh-deploy`.              |
+| **datasets**     | `main`              | Fluxo Git Flow simplificado; utiliza `feature/*`, `bugfix/*` e `release/*` conforme necessário.  |
+| **fakebuster**   | `main`, `develop`   | Aplicações de Machine Learning com RAGFlow. Utiliza Git Flow completo.                           |
+| **backend**      | `main`, `develop`   | Serviços e APIs da aplicação. Git Flow completo.                                                  |
+| **frontend**     | `main`, `develop`   | Interface e frontend web. Git Flow completo.                                                      |
+
+##  Regras de Merge
+
+- Todo **Pull Request** deve:
+  - Ter **pelo menos 1 reviewer aprovado**;
+  - Passar por todas as validações de **CI** com sucesso.
+  
+- Estratégias de merge:
+  - **Squash & Merge**: para `feature/*`, `bugfix/*` e `doc/*`;
+  - **Merge commit**: para `release/*` e `hotfix/*` (preservando o histórico de versionamento);
+  - **Tags**: aplicadas apenas na branch `main`.
+
+##  Automação
+
+- GitHub Actions:
+  - Validação automática de nomes de branch com **expressões regulares**;
+  - Workflows específicos para release, build e deploy por repositório;
+  
+- Artefatos:
+  - São publicados automaticamente nas releases (`Docker`, `npm`, modelos `ML`, etc.).
+
+##  Histórico do Documento
 
 | Versão | Data       | Descrição            | Autor         |
-| ------ | ---------- | -------------------- | ------------- |
-| 1.0    | 18/04/2025 | Criação do documento | Equipe EHFAKE |
-
+|--------|------------|----------------------|---------------|
+| 1.0    | 18/04/2025 | Criação inicial      | Equipe EHFAKE |
+| 1.1    | 20/05/2025 | Revisão e melhoria   | Equipe EHFAKE |
