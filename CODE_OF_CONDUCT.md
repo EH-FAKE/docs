@@ -1,43 +1,39 @@
-# Código de Conduta - Projeto É Fake?
+# Código de Conduta
 
 ## Nosso Compromisso
 
-Como membros e mantenedores do projeto **É Fake?**, nos comprometemos a criar uma comunidade aberta, inclusiva, amigável e respeitosa. Queremos que todas as pessoas, independentemente de sua origem, identidade ou experiência, se sintam bem-vindas e seguras ao contribuir para o projeto.
+Nós, como membros, contribuintes e mantenedores deste projeto, nos comprometemos a tornar a participação em nosso projeto uma experiência livre de assédio para todos, independentemente de idade, tamanho corporal, deficiência, etnia, características sexuais, identidade de gênero, nível de experiência, educação, status socioeconômico, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
 
-Este código de conduta aplica-se tanto ao comportamento de colaboradores nas interações online, como também em eventos ou qualquer espaço onde o projeto **É Fake?** seja representado.
+## Nossos Padrões
 
-## Padrões de Comportamento
+Exemplos de comportamento que contribuem para criar um ambiente positivo incluem:
 
-Nós esperamos que os participantes deste projeto ajam de acordo com os seguintes padrões:
+- Usar linguagem acolhedora e inclusiva
+- Respeitar pontos de vista e experiências diferentes
+- Aceitar críticas construtivas com graça
+- Focar no que é melhor para a comunidade
+- Mostrar empatia com outros membros da comunidade
 
-- **Respeito mútuo**: Trate todas as pessoas com respeito. Não toleramos comportamento discriminatório ou prejudicial.
-- **Inclusão**: Busque criar um ambiente inclusivo, onde todos se sintam bem-vindos a contribuir e interagir.
-- **Comunicação construtiva**: Mantenha um tom positivo e produtivo nas discussões. Seja aberto a feedbacks construtivos.
-- **Comportamento profissional**: Colabore com empatia e respeito. Mantenha um nível de profissionalismo em todos os momentos.
-- **Respeito à diversidade**: Respeite as diferentes opiniões, perspectivas e experiências. O projeto é mais forte quando todos têm voz.
+Comportamentos inaceitáveis incluem:
 
-## Comportamento Inaceitável
+- Uso de linguagem ou imagens sexualizadas
+- Ataques pessoais ou políticos
+- Assédio público ou privado
+- Divulgação de informações privadas de terceiros
+- Qualquer conduta que seja razoavelmente considerada inapropriada em um ambiente profissional
 
-Exemplos de comportamento inaceitável incluem, mas não se limitam a:
+## Nossas Responsabilidades
 
-- **Assédio**: Comentários ou comportamentos que intimidam, assediam, discriminam ou desrespeitam outros membros da comunidade com base em características como gênero, orientação sexual, identidade de gênero, etnia, religião, deficiência, aparência física ou qualquer outra característica pessoal.
-- **Trollagem**: Participação em discussões com o objetivo de inflamar, desinformar ou distrair outros.
-- **Ofensas pessoais**: Ataques pessoais, insultos ou qualquer outra forma de comportamento abusivo, seja em público ou privado.
+Mantenedores do projeto são responsáveis por esclarecer os padrões de comportamento e tomar ações apropriadas e justas em resposta a qualquer comportamento inaceitável.
 
-## Consequências de Comportamento Inaceitável
+## Escopo
 
-Participantes que violarem este Código de Conduta podem ser advertidos ou banidos, dependendo da gravidade da infração. O time de manutenção tomará medidas apropriadas para garantir que a comunidade continue a ser um ambiente seguro e acolhedor.
+Este código de conduta se aplica tanto em espaços de projeto quanto em espaços públicos quando um indivíduo estiver representando o projeto.
 
-## Como Relatar
+## Aplicação
 
-Se você for vítima de ou testemunhar qualquer comportamento inaceitável, entre em contato com os mantenedores do projeto imediatamente. Você pode enviar um email para **[contato@ehfake.com]** ou abrir uma *issue* no repositório.
+Violações deste Código de Conduta podem ser reportadas para a equipe do projeto em [seu-email@exemplo.com].
 
-Todos os relatos serão tratados de forma confidencial.
+---
 
-## Atribuição
-
-Este código de conduta é uma adaptação do **Contributor Covenant**, versão 2.1. O texto original pode ser encontrado em: https://www.contributor-covenant.org/version/2/1/code_of_conduct/
-
-## Licença
-
-Este Código de Conduta é licenciado sob a [Licença MIT](LICENSE).
+Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1.

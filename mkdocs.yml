@@ -1,40 +1,40 @@
-site_name: EHFAKE - Documentação
-site_description: Documentação técnica do projeto EHFAKE
-site_author: Lab Livre - UnB
-repo_url: https://github.com/EH-FAKE/docs
-repo_name: EHFAKE - Docs
-
-site_url: https://eh-fake.github.io/docs/  
-edit_uri: edit/main/docs/
+site_name: Eh-Fake
+site_description: Uma fusão de jornalismo e arte pop
+site_author: Seu Nome
+repo_url: htpps://github.com/EH-FAKE
+repo_name: EH-FAKE
+repo_type: github
+docs_dir: docs
 
 theme:
   name: material
-  language: pt-BR
-  features:
-    - navigation.tabs
-    - navigation.expand
-    - toc.integrate
-    - search.highlight
-    - search.suggest
-
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.tabbed
-  - pymdownx.tasklist:
-      custom_checkbox: true
-
-plugins:
-  - search
-  - minify:
-      minify_html: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom-dark
+      accent: gray
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  font:
+    text: Roboto Slab
+    code: Fira Code
+  logo: ../assets/logo-ehfake-light.png
+  favicon: ../assets/icon-ehfake.svg
 
 nav:
-  - Início: index.md
+  - Home: index.md
+  - Sobre:
+    - O que é o Eh-Fake?: sobre/o-que-e.md
+    - Check-up: sobre/check-up.md
+    - Equipe: sobre/equipe.md
   - Atas de Reunião:
     - Ata 1: atas/ata-1.md
     - Ata 2: atas/ata-2.md
@@ -48,4 +48,19 @@ nav:
     - Backlog: release1/backlog.md
     - Sistema de governança: release1/sistema-governanca.md
 
+extra_css:
+  - styles/custom.css
 
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+
+extra_javascript: []
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lelamo2002/check-up

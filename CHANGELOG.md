@@ -1,17 +1,37 @@
-# Changelog
+# 📜 Changelog
 
 Todas as mudanças importantes para este projeto serão documentadas neste arquivo.
 
-O formato deste arquivo segue as convenções de [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/), e este projeto adota [Versionamento Semântico](https://semver.org/lang/pt-BR/).
+Este projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/) e as convenções do [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
-## [1.0.0] - 27-04-2025
+## [Unreleased]
+
+### Adicionado 🔴
+- Estrutura inicial da documentação.
+- `README.md` com visão geral e instruções básicas.
+- `CONTRIBUTING.md` com diretrizes de contribuição.
+- `CODE_OF_CONDUCT.md` com boas práticas de convivência.
+- Template de changelog (`CHANGELOG.md`).
+- `LICENSE` com licença MIT.
+- Estrutura inicial para GitHub Pages.
+- Estrutura de Roadmap.
+- Documentação técnica da comunidade.
+- Templates para issues e pull requests.
+- Configuração inicial de integração contínua (CI).
+
+### Corrigido 🟡
+- `Dockerfile` e `docker-compose.yml` com ajustes para funcionamento correto.
+
+---
+
+## [1.0.0] - 2025-04-27
 
 ### Adicionado
 - Criação do repositório público no GitHub com histórico limpo.
 - Definição da estrutura de governança de produto (papéis atribuídos).
 - Implementação do sistema de versionamento com git-flow.
-- Configuração do README.md com visão geral, tecnologias e instruções de uso.
-- Criação dos arquivos CONTRIBUTING.md e CODE_OF_CONDUCT.md.
+- Configuração do `README.md` com visão geral, tecnologias e instruções de uso.
+- Criação dos arquivos `CONTRIBUTING.md` e `CODE_OF_CONDUCT.md`.
 - Definição da licença de software livre (MIT).
 - Desenvolvimento dos primeiros épicos e features do backlog.
 - Redação das histórias de usuários iniciais.
@@ -24,14 +44,12 @@ O formato deste arquivo segue as convenções de [Keep a Changelog](https://keep
 - Correções de configuração no Docker Compose para suportar o RAGflow.
 
 ### Melhorado
-- Atualização do README.md com instruções mais claras de instalação.
+- Atualização do `README.md` com instruções mais claras de instalação.
 - Melhoria na documentação da arquitetura da solução.
 
 ---
 
-## Histórico
-
-### [0.1.0] - 22-04-2025
+## [0.1.0] - 2025-04-22
 
 ### Adicionado
 - Apresentação inicial do projeto para novos integrantes.
