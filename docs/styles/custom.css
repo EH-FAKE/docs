@@ -1,0 +1,61 @@
+/* Tipografia com estilo jornalístico */
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 2px solid rgb(73, 73, 73);
+    padding-bottom: 0.3em;
+}
+
+/* Links com cor da marca */
+a {
+    color: black;
+}
+
+[data-md-color-scheme="slate"] a {
+    color: #fff5b9;
+}
+
+a:hover {
+    color: #fff5b9;
+}
+
+/* Cabeçalho com fundo amarelo no modo claro */
+.md-header {
+    background-color: #f7ee92 !important;
+}
+
+/* Remover o nome do site (caso apareça além da logo) */
+.md-header__title {
+    display: none !important;
+}
+
+.md-header__option {
+    margin-left: auto !important;
+}
+
+/* Fundo do modo escuro */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #212e3d;
+    --md-primary-fg-color: #FEF16C;
+}
+
+/* Opcional: ajustes de contraste em modo escuro */
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #212e3d !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav {
+    background-color: #212e3d !important;
+}
+
+.md-footer {
+    background-color: #FEF16Cff !important;
+    /* azul mais suave que o preto */
+    color: #ccc;
+}
+
+/* Esconde o logo padrão em modo escuro e troca pelo escuro */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+    content: url("../assets/logo-ehfake-dark.png");
+}

@@ -1,13 +1,7 @@
-# Bem-vindo ao EHFAKE
+<meta http-equiv="refresh" content="0; url=land/index.html"/>
 
-Esta é a documentação oficial do **EHFAKE**, projeto do Lab Livre - UnB voltado para o desenvolvimento de tecnologia de Machine Learning para detecção de notícias desinformativas.
+# Eh fake
 
-## Objetivos
+Bem vindo ao Eh fake!
 
-- Fornecer uma visão geral do projeto;
-- Detalhar a arquitetura, requisitos e funcionalidades;
-- Documentar processos de contribuição e governança do repositório.
-
----
-
-Acesse [Guia de Contribuição](guia-de-contribuicao/politica-de-branches.md) para entender como colaborar.
+Se você não foi redirecionado automaticamente, [clique aqui](land/index.html).
