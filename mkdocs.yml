@@ -3,7 +3,6 @@ site_description: Uma fusão de jornalismo e arte pop
 site_author: Seu Nome
 repo_url: htpps://github.com/EH-FAKE
 repo_name: EH-FAKE
-repo_type: github
 docs_dir: docs
 
 theme:
