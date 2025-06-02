@@ -34,6 +34,7 @@ nav:
     - O que é o Eh-Fake?: sobre/o-que-e.md
     - Check-up: sobre/check-up.md
     - Equipe: sobre/equipe.md
+    - Backlog: sobre/backlog.md
   - Atas de Reunião:
     - Ata 1: atas/ata-1.md
     - Ata 2: atas/ata-2.md
@@ -44,8 +45,7 @@ nav:
     - Política de Branches: guia-de-contribuicao/politica-de-branches.md
     - Política de Commits: guia-de-contribuicao/politica-de-commits.md
   - Releases semanais:
-    - Apresentação: releases/apresentacao.md
-    - Backlog: releases/backlog.md
+
     - Release 1.0.0: releases/release-1-0-0.md
     - Release 1.1.0: releases/release-1-1-0.md
     - Release 1.2.0: releases/release-1-2-0.md
