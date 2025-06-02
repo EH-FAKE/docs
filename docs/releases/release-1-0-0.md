@@ -3,8 +3,8 @@
 **Data de Lançamento:** 28/04/2025
 
 ## **Resumo da Versão**  
+
 O EH-FAKE é um projeto open source que utiliza a ferramenta RAGFlow para análise e classificação de notícias, identificando conteúdos informativos e desinformativos (fake news). O projeto visa criar uma solução escalável e precisa para o combate à desinformação.
----
 
 ## **Melhorias Implementadas**  
 
@@ -41,14 +41,15 @@ O EH-FAKE é um projeto open source que utiliza a ferramenta RAGFlow para análi
 ---
 
 **Equipe de Desenvolvimento**  
-Amanda Campos - @acamposs 
-Raissa - @RaissaAndradeS 
-Leticia - @leticiakrpaiva 
-Fause - @FauseSkyWalker 
-Luis - @LuisMiranda10 
-Phillipe - @PhMoraiis 
-Tiago - @Tiago1604 
-Vinicius Vieira - @viniciusvieira00 
-Vinicius Mendes - @yabamiah 
+    
+- Amanda Campos - @acamposs  
+- Raissa - @RaissaAndradeS  
+- Leticia - @leticiakrpaiva  
+- Fause - @FauseSkyWalker  
+- Luis - @LuisMiranda10  
+- Phillipe - @PhMoraiis  
+- Tiago - @Tiago1604  
+- Vinicius Vieira - @viniciusvieira00  
+- Vinicius Mendes - @yabamiah  
 
 --- 

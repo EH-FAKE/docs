@@ -34,28 +34,34 @@ Responsável pela criação de novos scrapers e spiders de portais de notícias.
 ### **Refatoração das extrações dos portais de notícias atuais**  
 
 - [x] **IG**: Amanda Campos - @acamposs  
-  - [x] spider  
-  - [x] play  
+
+    - [x] spider  
+    - [x] play  
 
 - [ ] **R7**: Leticia - @leticiakrpaiva  
-  - [ ] spider  
-  - [ ] play  
 
-- [ ] **RBS**: Vinicius Vieira - @viniciusvieira00  
-  - [ ] spider  
-  - [ ] play  
+    - [ ] spider  
+    - [ ] play  
+
+- [ ] **RBS**: Vinicius Vieira - @viniciusvieira00 
+
+    - [ ] spider  
+    - [ ] play  
 
 - [ ] **Terra**: Raissa - @RaissaAndradeS  
-  - [ ] spider  
-  - [ ] play  
 
-- [ ] **UOL**: Fause - @FauseSkyWalker  
-  - [ ] spider  
-  - [ ] play  
+    - [ ] spider  
+    - [ ] play  
 
-- [ ] **Veja**: Fause - @FauseSkyWalker  
-  - [ ] spider  
-  - [ ] play  
+- [ ] **UOL**: Fause - @FauseSkyWalker 
+
+    - [ ] spider  
+    - [ ] play  
+
+- [ ] **Veja**: Fause - @FauseSkyWalker 
+ 
+    - [ ] spider  
+    - [ ] play  
 
 ### **Criação de extrações para novos portais de notícias**  
 
@@ -64,20 +70,24 @@ Criação de **2 a 4 extrações**, no mínimo. Os portais foram escolhidos com 
 (obs: sujeito a mudanças)
 
 - [x] **Aliados Brasil**: Luis - @LuisMiranda10  
-  - [x] spider  
-  - [x] play  
+
+    - [x] spider  
+    - [x] play  
 
 - [ ] **Imirante**: Phillipe - @PhMoraiis  
-  - [ ] spider  
-  - [ ] play  
+
+    - [ ] spider  
+    - [ ] play  
 
 - [ ] **O Povo**: Tiago - @Tiago1604  
-  - [ ] spider  
-  - [ ] play  
+
+    - [ ] spider  
+    - [ ] play  
 
 - [x] **Mais Goiás**: Vinicius Mendes - @yabamiah  
-  - [x] spider  
-  - [x] play  
+
+    - [x] spider  
+    - [x] play  
 
 ---
 
@@ -90,15 +100,16 @@ Criação de **2 a 4 extrações**, no mínimo. Os portais foram escolhidos com 
 
 ---
 
-**Equipe de Desenvolvimento**  
-Amanda Campos - @acamposs  
-Raissa - @RaissaAndradeS  
-Leticia - @leticiakrpaiva  
-Fause - @FauseSkyWalker  
-Luis - @LuisMiranda10  
-Phillipe - @PhMoraiis  
-Tiago - @Tiago1604  
-Vinicius Vieira - @viniciusvieira00  
-Vinicius Mendes - @yabamiah  
+## **Equipe de Desenvolvimento**  
+    
+- Amanda Campos - @acamposs  
+- Raissa - @RaissaAndradeS  
+- Leticia - @leticiakrpaiva  
+- Fause - @FauseSkyWalker  
+- Luis - @LuisMiranda10  
+- Phillipe - @PhMoraiis  
+- Tiago - @Tiago1604  
+- Vinicius Vieira - @viniciusvieira00  
+- Vinicius Mendes - @yabamiah  
 
 ---

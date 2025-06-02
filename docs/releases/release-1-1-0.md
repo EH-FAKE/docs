@@ -32,15 +32,15 @@ Houve uma mudança no projeto, agora com foco no "aos fatos", criando toda a par
 
 ---
 
-Equipe de Desenvolvimento  
-Amanda Campos - [@acamposs](https://t.me/acamposs) 
-Raissa - [@RaissaAndradeS](https://t.me/RaissaAndradeS) 
-Leticia - [@leticiakrpaiva](https://t.me/leticiakrpaiva) 
-Fause - [@FauseSkyWalker](https://t.me/FauseSkyWalker) 
-Luis - [@LuisMiranda10](https://t.me/LuisMiranda10) 
-Phillipe - [@PhMoraiis](https://t.me/PhMoraiis) 
-Tiago - [@Tiago1604](https://t.me/Tiago1604) 
-Vinicius Vieira - [@viniciusvieira00](https://t.me/viniciusvieira00) 
-Vinicius Mendes - [@yabamiah](https://t.me/yabamiah) 
-
+## **Equipe de Desenvolvimento**  
+    
+- Amanda Campos - @acamposs  
+- Raissa - @RaissaAndradeS  
+- Leticia - @leticiakrpaiva  
+- Fause - @FauseSkyWalker  
+- Luis - @LuisMiranda10  
+- Phillipe - @PhMoraiis  
+- Tiago - @Tiago1604  
+- Vinicius Vieira - @viniciusvieira00  
+- Vinicius Mendes - @yabamiah  
 ---

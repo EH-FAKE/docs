@@ -32,31 +32,38 @@ Além disso, a equipe essa semana irá realizar:
 - Apresentação sobre as decisições que foram tomadas para o rumo do projeto, o que foi feito e os próximos passos.
 - Abertura das issues das tarefas realizadas
 
----
 
-## **Melhorias Implementadas**  
+## **Melhorias Implementadas**
 
-### **Refatoração das extrações dos portais de notícias atuais**  
+- será adicionado posteriormente
+
+### **Refatoração das extrações dos portais de notícias atuais**
+
+- será adicionado posteriormente
 
 ### **Criação de extrações para novos portais de notícias**  
 
+- será adicionado posteriormente
+
 ### **Criação das issues das tarefas feitas**
 
----
+- será adicionado posteriormente
 
 ## **Próximos Passos**  
-  
----
 
-**Equipe de Desenvolvimento**  
-Amanda Campos - @acamposs  
-Raissa - @RaissaAndradeS  
-Leticia - @leticiakrpaiva  
-Fause - @FauseSkyWalker  
-Luis - @LuisMiranda10  
-Phillipe - @PhMoraiis  
-Tiago - @Tiago1604  
-Vinicius Vieira - @viniciusvieira00  
-Vinicius Mendes - @yabamiah  
+- será adicionado posteriormente
+  
+
+## **Equipe de Desenvolvimento**  
+    
+- Amanda Campos - @acamposs  
+- Raissa - @RaissaAndradeS  
+- Leticia - @leticiakrpaiva  
+- Fause - @FauseSkyWalker  
+- Luis - @LuisMiranda10  
+- Phillipe - @PhMoraiis  
+- Tiago - @Tiago1604  
+- Vinicius Vieira - @viniciusvieira00  
+- Vinicius Mendes - @yabamiah  
 
 ---
