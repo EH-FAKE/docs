@@ -33,7 +33,7 @@ nav:
   - Sobre:
     - O que é o Eh-Fake?: sobre/o-que-e.md
     - Check-up: sobre/check-up.md
-    - Equipe: sobre/equipe.md
+    - Pipeline de Dados: sobre/Pipeline_dados_scraps.md
     - Backlog: sobre/backlog.md
   - Atas de Reunião:
     - Ata 1: atas/ata-1.md
@@ -42,15 +42,15 @@ nav:
     - Ata 5: atas/ata-5.md
     - Ata 6: atas/ata-6.md
   - Guia de Contribuição:
+    - Como Contribuir?: guia-de-contribuicao/TUTORIAL_SPIDERS_PLAYS.md
     - Política de Branches: guia-de-contribuicao/politica-de-branches.md
     - Política de Commits: guia-de-contribuicao/politica-de-commits.md
   - Releases semanais:
-
     - Release 1.0.0: releases/release-1-0-0.md
     - Release 1.1.0: releases/release-1-1-0.md
     - Release 1.2.0: releases/release-1-2-0.md
     - Release 1.3.0: releases/release-1-3-0.md
-
+  - Post Mortem: post_mortem/Post_mortem.md
 extra_css:
   - styles/custom.css
 

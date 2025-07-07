@@ -1,4 +1,5 @@
-# Tutorial: Como Alterar/Criar Spiders e Plays
+# Faça sua raspagem de notícias em sites de noticias com Playwright e Scrapy! 
+> Tutorial de como criar ou alterar spiders e plays para coletar e extrair conteúdo de notícias.
 
 ## Contexto do Projeto
 
