@@ -13,10 +13,8 @@
       
       
       
-        <link rel="prev" href="../o-que-e/">
+        <link rel="prev" href="../../releases/release-1-3-0/">
       
-      
-        <link rel="next" href="../Pipeline_dados_scraps/">
       
       
       <link rel="icon" href="../../../assets/icon-ehfake.svg">
@@ -24,7 +22,7 @@
     
     
       
-        <title>Check-up - Eh-Fake</title>
+        <title>Post Mortem - Eh-Fake</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#check-up" class="md-skip">
+        <a href="#post-mortem-do-projeto-eh-fake" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Check-up
+              Post Mortem
             
           </span>
         </div>
@@ -277,20 +275,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -306,7 +302,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Sobre
@@ -320,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../o-que-e/" class="md-nav__link">
+      <a href="../../sobre/o-que-e/" class="md-nav__link">
         
   
   
@@ -340,32 +336,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Check-up
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../sobre/check-up/" class="md-nav__link">
         
   
   
@@ -376,35 +350,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivos-principais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivos principais:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -417,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Pipeline_dados_scraps/" class="md-nav__link">
+      <a href="../../sobre/Pipeline_dados_scraps/" class="md-nav__link">
         
   
   
@@ -440,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../backlog/" class="md-nav__link">
+      <a href="../../sobre/backlog/" class="md-nav__link">
         
   
   
@@ -878,10 +823,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../post_mortem/Post_mortem/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Post Mortem
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -892,6 +859,161 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visão Geral do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estrutura-do-repositorio-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Estrutura do Repositório GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Estrutura do Repositório GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-check-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. check-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. docs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-analise-tecnica-e-estrutura-do-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Análise Técnica e Estrutura do Código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Análise Técnica e Estrutura do Código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-check-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. check-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. docs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-objetivos-e-resultados-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Objetivos e Resultados do Projeto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Objetivos e Resultados do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-objetivos-iniciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Objetivos Iniciais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-resultados-alcancados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Resultados Alcançados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-licoes-aprendidas-e-desafios" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Lições Aprendidas e Desafios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-recomendacoes-e-proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Recomendações e Próximos Passos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -923,9 +1045,135 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivos-principais" class="md-nav__link">
+  <a href="#1-visao-geral-do-projeto" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivos principais:
+      1. Visão Geral do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estrutura-do-repositorio-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Estrutura do Repositório GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Estrutura do Repositório GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-check-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. check-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. docs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-analise-tecnica-e-estrutura-do-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Análise Técnica e Estrutura do Código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Análise Técnica e Estrutura do Código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-check-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. check-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. docs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-objetivos-e-resultados-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Objetivos e Resultados do Projeto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Objetivos e Resultados do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-objetivos-iniciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Objetivos Iniciais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-resultados-alcancados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Resultados Alcançados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-licoes-aprendidas-e-desafios" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Lições Aprendidas e Desafios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-recomendacoes-e-proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Recomendações e Próximos Passos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Conclusão
     </span>
   </a>
   
@@ -950,21 +1198,88 @@
   
 
 
-<h1 id="check-up">Check-up<a class="headerlink" href="#check-up" title="Permanent link">&para;</a></h1>
-<p>O <strong>Check-up</strong> é um subprojeto essencial dentro do ecossistema Eh-Fake, focado em garantir a qualidade dos dados coletados semanalmente por spiders. Ele atua como uma camada de verificação e organização das informações extraídas, validando a consistência, a estrutura e a confiabilidade das fontes.</p>
-<h2 id="objetivos-principais">Objetivos principais:<a class="headerlink" href="#objetivos-principais" title="Permanent link">&para;</a></h2>
+<h1 id="post-mortem-do-projeto-eh-fake">Post-Mortem do Projeto EH-FAKE<a class="headerlink" href="#post-mortem-do-projeto-eh-fake" title="Permanent link">&para;</a></h1>
+<h2 id="1-visao-geral-do-projeto">1. Visão Geral do Projeto<a class="headerlink" href="#1-visao-geral-do-projeto" title="Permanent link">&para;</a></h2>
+<p>O projeto EH-FAKE é uma iniciativa desenvolvida por estudantes da Universidade de Brasília (UnB) com o objetivo de combater a desinformação, especificamente em anúncios publicitários de saúde que circulam em grandes sites de notícias brasileiros. A solução proposta visa identificar e classificar notícias desinformativas utilizando tecnologias de Machine Learning e Processamento de Linguagem Natural (PLN).</p>
+<h2 id="2-estrutura-do-repositorio-github">2. Estrutura do Repositório GitHub<a class="headerlink" href="#2-estrutura-do-repositorio-github" title="Permanent link">&para;</a></h2>
+<p>O repositório EH-FAKE no GitHub é composto por três sub-repositórios principais, cada um com uma função específica no ecossistema do projeto:</p>
+<h3 id="21-check-up">2.1. <code>check-up</code><a class="headerlink" href="#21-check-up" title="Permanent link">&para;</a></h3>
+<p>Este é o coração do projeto, contendo a lógica principal para a análise de desinformação. Suas funcionalidades incluem:</p>
 <ul>
-<li>Automatizar a verificação e limpeza dos dados coletados.</li>
-<li>Identificar problemas em spiders existentes.</li>
-<li>Organizar e publicar releases semanais com conteúdo validado.</li>
-<li>Ajudar o time de desenvolvimento a manter padrões de qualidade.</li>
+<li><strong>Coleta de URLs</strong>: Utiliza a biblioteca Scrapy para rastrear e coletar URLs de notícias das páginas iniciais de dez portais de notícias brasileiros (Estadão, Folha, Globo, IG, Metrópoles, R7, RBS, Terra, Veja, UOL).</li>
+<li><strong>Raspagem de Anúncios</strong>: Emprega a biblioteca Playwright para simular a navegação em um navegador e capturar anúncios nativos presentes nas páginas de notícias. Também é responsável por arquivar esses anúncios e registrar capturas de tela.</li>
+<li><strong>Classificação de Anúncios</strong>: Utiliza um Grande Modelo de Linguagem (LLM) para classificar os anúncios coletados em 45 categorias pré-definidas, com a opção de integração com a API da OpenAI.</li>
 </ul>
-<p>Atualmente, o projeto é dividido entre duas frentes:</p>
-<ol>
-<li><strong>Desenvolvimento de novas spiders</strong></li>
-<li><strong>Melhoria contínua das spiders existentes</strong></li>
-</ol>
-<p>O roadmap e as tarefas são planejados em ciclos semanais com foco em entregas incrementais e documentadas.</p>
+<h3 id="22-docs">2.2. <code>docs</code><a class="headerlink" href="#22-docs" title="Permanent link">&para;</a></h3>
+<p>Este repositório é dedicado à documentação abrangente do projeto EH-FAKE. Ele fornece informações cruciais sobre:</p>
+<ul>
+<li><strong>Contexto do Projeto</strong>: Detalha o problema da desinformação em anúncios de saúde e a motivação por trás do EH-FAKE.</li>
+<li><strong>Estrutura da Solução</strong>: Explica como a solução é arquitetada, incluindo os conceitos de Query, Pergunta, Explicação para IA e Classificação (Desinformativo, Informativo, Não se encaixa).</li>
+<li><strong>Tecnologias Utilizadas</strong>: Lista e descreve as principais ferramentas e bibliotecas, como RAGFlow (para orquestração de fluxos RAG) e NGROK (para exposição de servidores locais).</li>
+<li><strong>Requisitos Funcionais</strong>: Apresenta os requisitos do sistema, como coleta contínua de notícias e pesquisa personalizada por tema (Estabilidade democrática, Saúde, Meio ambiente, Mulheres, Povos e comunidades tradicionais, População negra, População LGBTQIA+) e fonte da notícia.</li>
+<li><strong>Instalação e Uso</strong>: Fornece instruções detalhadas para configurar e executar o projeto localmente, incluindo a criação de ambiente virtual, instalação de dependências e execução dos scripts.</li>
+<li><strong>Contribuição</strong>: Orientações para novos contribuidores.</li>
+</ul>
+<h2 id="3-analise-tecnica-e-estrutura-do-codigo">3. Análise Técnica e Estrutura do Código<a class="headerlink" href="#3-analise-tecnica-e-estrutura-do-codigo" title="Permanent link">&para;</a></h2>
+<h3 id="31-check-up">3.1. <code>check-up</code><a class="headerlink" href="#31-check-up" title="Permanent link">&para;</a></h3>
+<p>O repositório <code>check-up</code> é o componente central do projeto, responsável pela coleta, raspagem e classificação de anúncios. A estrutura do código reflete essa modularidade:</p>
+<ul>
+<li><strong><code>models.py</code></strong>: Define os modelos de dados para o banco de dados, incluindo <code>Portal</code>, <code>Entry</code>, <code>Advertisement</code>, <code>URLQueue</code> e <code>QueueStatus</code>. Isso indica uma abordagem robusta para o armazenamento e gerenciamento dos dados coletados.</li>
+<li><strong><code>spiders/</code></strong>: Contém os <em>spiders</em> (rastreadores) implementados com a biblioteca Scrapy. Cada arquivo dentro deste diretório (<code>estadao.py</code>, <code>folha.py</code>, <code>globo.py</code>, etc.) é responsável por coletar URLs de notícias de um portal específico. A existência de um <code>base.py</code> sugere uma estrutura de herança para reutilização de código entre os <em>spiders</em>.</li>
+<li><strong><code>plays/</code></strong>: Abriga os scripts que utilizam a biblioteca Playwright para raspar os anúncios das páginas de notícias. Assim como os <em>spiders</em>, cada arquivo (<code>estadao.py</code>, <code>folha.py</code>, etc.) corresponde a um portal específico, indicando a necessidade de adaptação do código para a estrutura HTML de cada site. O <code>base.py</code> e <code>utils.py</code> provavelmente fornecem funcionalidades comuns.</li>
+<li><strong><code>llm/</code></strong>: Contém a lógica para a classificação de anúncios usando um Grande Modelo de Linguagem (LLM). A menção a <code>categories.py</code> e <code>OPENAI_API_KEY</code> no README sugere que a classificação é baseada em categorias predefinidas e pode ser integrada com a API da OpenAI.</li>
+<li><strong><code>docker/</code></strong>: Inclui arquivos relacionados à conteinerização do ambiente, como <code>compose.yml</code> e <code>Dockerfile</code>, facilitando a configuração e execução do projeto em diferentes ambientes.</li>
+<li><strong><code>Makefile</code></strong>: Define comandos para automatizar tarefas como iniciar serviços (<code>make start</code>), inicializar o banco de dados (<code>make init_db</code>), executar migrações (<code>make migrate_db</code>), coletar URLs (<code>make crawl</code>) e raspar anúncios (<code>make scrape</code>). Isso simplifica o fluxo de trabalho para desenvolvedores e usuários.</li>
+</ul>
+<h3 id="32-docs">3.2. <code>docs</code><a class="headerlink" href="#32-docs" title="Permanent link">&para;</a></h3>
+<p>O repositório <code>docs</code> é uma documentação bem estruturada do projeto, utilizando o MkDocs. A organização dos arquivos indica uma preocupação com a clareza e facilidade de uso:</p>
+<ul>
+<li><strong><code>docs/</code></strong>: Contém os arquivos Markdown que compõem a documentação. A presença de subdiretórios e arquivos como <code>index.md</code>, <code>contributing.md</code>, <code>tutorial_spiders_plays.md</code> demonstra uma organização lógica do conteúdo.</li>
+<li><strong><code>mkdocs.yml</code></strong>: Arquivo de configuração do MkDocs, que define a estrutura da navegação, temas e plugins utilizados na documentação.</li>
+<li><strong><code>requirements.txt</code></strong>: Lista as dependências Python necessárias para construir e servir a documentação.</li>
+</ul>
+<h2 id="4-objetivos-e-resultados-do-projeto">4. Objetivos e Resultados do Projeto<a class="headerlink" href="#4-objetivos-e-resultados-do-projeto" title="Permanent link">&para;</a></h2>
+<h3 id="41-objetivos-iniciais">4.1. Objetivos Iniciais<a class="headerlink" href="#41-objetivos-iniciais" title="Permanent link">&para;</a></h3>
+<p>O principal objetivo do projeto EH-FAKE, conforme descrito na documentação, é desenvolver uma tecnologia baseada em Machine Learning para identificar e classificar notícias desinformativas, com foco inicial em anúncios publicitários de saúde. Os objetivos específicos incluem:</p>
+<ul>
+<li><strong>Coleta Contínua de Notícias</strong>: Estabelecer um sistema para coletar regularmente notícias de jornais e revistas parceiros.</li>
+<li><strong>Pesquisa Personalizada</strong>: Permitir a pesquisa e classificação de notícias com base em temas específicos (estabilidade democrática, saúde, meio ambiente, mulheres, povos e comunidades tradicionais, população negra, população LGBTQIA+) e fontes.</li>
+<li><strong>Identificação de Desinformação</strong>: Desenvolver um mecanismo para verificar a presença de desinformação em anúncios.</li>
+<li><strong>Classificação de Anúncios</strong>: Categorizar anúncios em 'Desinformativo', 'Informativo' ou 'Não se encaixa' usando LLMs.</li>
+</ul>
+<h3 id="42-resultados-alcancados">4.2. Resultados Alcançados<a class="headerlink" href="#42-resultados-alcancados" title="Permanent link">&para;</a></h3>
+<p>Com base na análise dos repositórios e da documentação, o projeto EH-FAKE demonstrou os seguintes resultados e progressos:</p>
+<ul>
+<li><strong>Infraestrutura de Coleta Funcional</strong>: O repositório <code>check-up</code> implementa com sucesso <em>spiders</em> (Scrapy) para coleta de URLs e <em>plays</em> (Playwright) para raspagem de anúncios de dez grandes portais de notícias brasileiros. A modularidade do código permite a fácil adição de novos portais.</li>
+<li><strong>Sistema de Classificação Baseado em LLM</strong>: A arquitetura prevê a utilização de um LLM para classificar anúncios, o que representa uma abordagem moderna e escalável para a detecção de desinformação. A integração com a API da OpenAI sugere flexibilidade na escolha do modelo.</li>
+<li><strong>Documentação Abrangente</strong>: O repositório <code>docs</code> é um ponto forte do projeto, fornecendo uma documentação clara e detalhada sobre o contexto, estrutura, tecnologias, requisitos e instruções de uso. Isso é crucial para a colaboração e a adoção do projeto.</li>
+<li><strong>Modularidade e Reusabilidade</strong>: A separação das funcionalidades em diferentes repositórios (<code>check-up</code>, <code>docs</code>, <code>airflow-rag</code>) e a estrutura interna de cada um (e.g., <code>base.py</code> para <em>spiders</em> e <em>plays</em>) indicam um design que favorece a modularidade e a reusabilidade do código.</li>
+<li><strong>Automação de Workflow</strong>: A presença do <code>Makefile</code> no <code>check-up</code> e <code>airflow-rag</code> simplifica a execução de tarefas complexas, como inicialização de banco de dados, migrações e processos de coleta e raspagem, o que é um indicativo de maturidade no desenvolvimento.</li>
+<li><strong>Conteinerização</strong>: O uso de Docker e Docker Compose facilita a configuração do ambiente de desenvolvimento e produção, garantindo consistência e reprodutibilidade.</li>
+</ul>
+<h3 id="43-licoes-aprendidas-e-desafios">4.3. Lições Aprendidas e Desafios<a class="headerlink" href="#43-licoes-aprendidas-e-desafios" title="Permanent link">&para;</a></h3>
+<p>Embora o projeto demonstre um progresso significativo, algumas lições e desafios podem ser inferidos:</p>
+<ul>
+<li><strong>Dependência de Estruturas de Sites</strong>: A necessidade de criar <em>spiders</em> e <em>plays</em> específicos para cada portal de notícias indica que o sistema é sensível a mudanças na estrutura HTML dos sites. Manter esses componentes atualizados pode ser um desafio contínuo.</li>
+<li><strong>Complexidade da Classificação de Desinformação</strong>: A classificação de desinformação é inerentemente complexa e subjetiva. A eficácia do LLM dependerá da qualidade dos prompts, dos dados de treinamento e da capacidade de adaptação a novas formas de desinformação.</li>
+<li><strong>Escalabilidade da Coleta</strong>: A coleta contínua de notícias de múltiplos portais e a raspagem de anúncios podem demandar recursos computacionais significativos, especialmente à medida que o volume de dados aumenta.</li>
+<li><strong>Manutenção de Modelos de LLM</strong>: A performance do sistema de classificação está diretamente ligada à manutenção e atualização do modelo de linguagem, o que pode exigir expertise em Machine Learning e recursos computacionais.</li>
+<li><strong>Colaboração e Comunicação</strong>: Em projetos de código aberto com múltiplos contribuidores, a comunicação eficaz e a coordenação são essenciais para garantir a integração suave das diferentes partes do sistema.</li>
+<li><strong>Documentação Contínua</strong>: Embora a documentação seja um ponto forte, a manutenção e atualização contínua, especialmente em um projeto em desenvolvimento ativo, é crucial para garantir que ela reflita o estado atual do código.</li>
+</ul>
+<h2 id="5-recomendacoes-e-proximos-passos">5. Recomendações e Próximos Passos<a class="headerlink" href="#5-recomendacoes-e-proximos-passos" title="Permanent link">&para;</a></h2>
+<p>Para o futuro do projeto EH-FAKE, as seguintes recomendações podem ser consideradas:</p>
+<ul>
+<li><strong>Monitoramento e Manutenção de Spiders/Plays</strong>: Implementar um sistema de monitoramento para detectar quebras nos <em>spiders</em> e <em>plays</em> devido a alterações nos layouts dos sites. Considerar abordagens mais resilientes à mudança de layout, se possível.</li>
+<li><strong>Aprimoramento do LLM</strong>: Continuar refinando o modelo de linguagem e os prompts para melhorar a precisão da classificação de desinformação. Explorar técnicas de <em>fine-tuning</em> ou modelos específicos para o domínio de saúde.</li>
+<li><strong>Otimização de Recursos</strong>: Investigar otimizações para a coleta e raspagem de dados, como o uso de proxies, rotação de IPs ou processamento distribuído, para lidar com a escalabilidade.</li>
+<li><strong>Feedback e Validação Humana</strong>: Integrar um ciclo de feedback humano para validar as classificações do LLM e usar esses dados para retreinar e aprimorar o modelo.</li>
+<li><strong>Expansão para Outras Mídias</strong>: Considerar a expansão da análise para outras formas de mídia, como vídeos ou áudios, se relevante para o escopo do projeto.</li>
+<li><strong>Engajamento da Comunidade</strong>: Continuar incentivando a contribuição da comunidade, talvez através de <em>hackathons</em> ou desafios, para acelerar o desenvolvimento e aprimoramento do projeto.</li>
+<li><strong>Publicação de Resultados</strong>: Compartilhar os resultados e as descobertas do projeto com a comunidade acadêmica e o público em geral para aumentar a conscientização sobre a desinformação em anúncios de saúde.</li>
+</ul>
+<h2 id="6-conclusao">6. Conclusão<a class="headerlink" href="#6-conclusao" title="Permanent link">&para;</a></h2>
+<p>O projeto EH-FAKE é uma iniciativa promissora e bem estruturada para combater a desinformação em anúncios de saúde. Com uma base técnica sólida, uma documentação abrangente e uma abordagem modular, ele tem o potencial de causar um impacto significativo. Os desafios identificados são inerentes a projetos dessa natureza, mas com um planejamento contínuo e a colaboração da comunidade, o EH-FAKE pode evoluir para uma ferramenta ainda mais poderosa e eficaz.</p>
 
 
 

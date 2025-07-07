@@ -1,0 +1,2710 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Uma fusão de jornalismo e arte pop">
+      
+      
+        <meta name="author" content="Seu Nome">
+      
+      
+      
+        <link rel="prev" href="../check-up/">
+      
+      
+        <link rel="next" href="../backlog/">
+      
+      
+      <link rel="icon" href="../../../assets/icon-ehfake.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Pipeline de Dados - Eh-Fake</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Slab";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pipeline-de-dados-do-check-up" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Eh-Fake" class="md-header__button md-logo" aria-label="Eh-Fake" data-md-component="logo">
+      
+  <img src="../../../assets/logo-ehfake-light.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Eh-Fake
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pipeline de Dados
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="blue"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom-dark" data-md-color-accent="gray"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="htpps://github.com/EH-FAKE" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    EH-FAKE
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Eh-Fake" class="md-nav__button md-logo" aria-label="Eh-Fake" data-md-component="logo">
+      
+  <img src="../../../assets/logo-ehfake-light.png" alt="logo">
+
+    </a>
+    Eh-Fake
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="htpps://github.com/EH-FAKE" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    EH-FAKE
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sobre
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sobre
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../o-que-e/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    O que é o Eh-Fake?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Check-up
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pipeline de Dados
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pipeline de Dados
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexto-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contexto do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Visão Geral do Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Estrutura de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Estrutura de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelos-principais-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos Principais (PostgreSQL)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-1-spiders-coleta-de-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕷️ ETAPA 1: Spiders - Coleta de URLs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🕷️ ETAPA 1: Spiders - Coleta de URLs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcao-dos-spiders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Função dos Spiders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-funcionam" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Como Funcionam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portais-suportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Portais Suportados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-dos-spiders" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuração dos Spiders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Execução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-2-plays-extracao-de-conteudo-e-anuncios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎭 ETAPA 2: Plays - Extração de Conteúdo e Anúncios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎭 ETAPA 2: Plays - Extração de Conteúdo e Anúncios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcao-dos-plays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Função dos Plays
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-funcionam_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Como Funcionam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-dos-dados-extraidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Estrutura dos Dados Extraídos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-play-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Exemplo de Play Funcional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processo-de-armazenamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗄️ Processo de Armazenamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execucao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Execução
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoramento" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Monitoramento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-3-armazenamento-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗄️ ETAPA 3: Armazenamento de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗄️ ETAPA 3: Armazenamento de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-banco-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL - Banco Principal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minio-armazenamento-de-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      MinIO - Armazenamento de Arquivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-de-processamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Status de Processamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-4-api-backend-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 ETAPA 4: API Backend (FastAPI)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 ETAPA 4: API Backend (FastAPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura da API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-dados-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Fluxo de Dados da API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formato-de-resposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Formato de Resposta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-5-frontend-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ ETAPA 5: Frontend (React)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ ETAPA 5: Frontend (React)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitetura-do-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitetura do Frontend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Interface do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Fluxo de Interação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos-de-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 Recursos de UX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-completo-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 FLUXO COMPLETO DE DADOS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 FLUXO COMPLETO DE DADOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline End-to-End
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cronograma-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱️ Cronograma de Execução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Comandos de Execução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Comandos de Execução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Inicial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execucao-do-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execução do Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoramento-e-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoramento e Debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-e-customizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Configuração e Customização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Configuração e Customização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente-env" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis de Ambiente (.env)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adicionando-novo-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adicionando Novo Portal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Métricas e Análises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Métricas e Análises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consultas-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consultas Úteis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Próximos Passos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Próximos Passos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#melhorias-planejadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Melhorias Planejadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalabilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas de Reunião
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas de Reunião
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guia de Contribuição
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Guia de Contribuição
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-de-contribuicao/TUTORIAL_SPIDERS_PLAYS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Como Contribuir?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-de-contribuicao/politica-de-branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Política de Branches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-de-contribuicao/politica-de-commits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Política de Commits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Releases semanais
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Releases semanais
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release-1-0-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 1.0.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release-1-1-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 1.1.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release-1-2-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 1.2.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release-1-3-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 1.3.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../post_mortem/Post_mortem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Post Mortem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexto-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contexto do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Visão Geral do Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Estrutura de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Estrutura de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelos-principais-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos Principais (PostgreSQL)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-1-spiders-coleta-de-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕷️ ETAPA 1: Spiders - Coleta de URLs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🕷️ ETAPA 1: Spiders - Coleta de URLs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcao-dos-spiders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Função dos Spiders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-funcionam" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Como Funcionam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portais-suportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Portais Suportados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-dos-spiders" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuração dos Spiders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Execução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-2-plays-extracao-de-conteudo-e-anuncios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎭 ETAPA 2: Plays - Extração de Conteúdo e Anúncios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎭 ETAPA 2: Plays - Extração de Conteúdo e Anúncios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcao-dos-plays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Função dos Plays
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-funcionam_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Como Funcionam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-dos-dados-extraidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Estrutura dos Dados Extraídos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-play-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Exemplo de Play Funcional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processo-de-armazenamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗄️ Processo de Armazenamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execucao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Execução
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoramento" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Monitoramento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-3-armazenamento-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗄️ ETAPA 3: Armazenamento de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗄️ ETAPA 3: Armazenamento de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-banco-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL - Banco Principal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minio-armazenamento-de-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      MinIO - Armazenamento de Arquivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-de-processamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Status de Processamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-4-api-backend-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 ETAPA 4: API Backend (FastAPI)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 ETAPA 4: API Backend (FastAPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura da API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-dados-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Fluxo de Dados da API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formato-de-resposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Formato de Resposta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapa-5-frontend-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ ETAPA 5: Frontend (React)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ ETAPA 5: Frontend (React)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arquitetura-do-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitetura do Frontend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Interface do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Fluxo de Interação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos-de-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 Recursos de UX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-completo-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 FLUXO COMPLETO DE DADOS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 FLUXO COMPLETO DE DADOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline End-to-End
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cronograma-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱️ Cronograma de Execução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Comandos de Execução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Comandos de Execução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Inicial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execucao-do-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execução do Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoramento-e-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoramento e Debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-e-customizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Configuração e Customização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Configuração e Customização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente-env" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis de Ambiente (.env)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adicionando-novo-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adicionando Novo Portal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Métricas e Análises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Métricas e Análises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consultas-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consultas Úteis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Próximos Passos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Próximos Passos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#melhorias-planejadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Melhorias Planejadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalabilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="pipeline-de-dados-do-check-up">Pipeline de Dados do Check-up<a class="headerlink" href="#pipeline-de-dados-do-check-up" title="Permanent link">&para;</a></h1>
+<h2 id="contexto-do-projeto">Contexto do Projeto<a class="headerlink" href="#contexto-do-projeto" title="Permanent link">&para;</a></h2>
+<p>O projeto <strong>Check-up</strong> tem como objetivo principal analisar a presença de desinformação em anúncios publicitários de saúde que circulam em grandes sites de notícias do Brasil. Este documento detalha o fluxo completo de dados desde a coleta inicial de URLs até a apresentação final no frontend web.</p>
+<h2 id="visao-geral-do-pipeline">🔄 Visão Geral do Pipeline<a class="headerlink" href="#visao-geral-do-pipeline" title="Permanent link">&para;</a></h2>
+<p>O pipeline de dados do Check-up é composto por <strong>cinco etapas principais</strong>:</p>
+<ol>
+<li><strong>🕷️ Crawling (Spiders)</strong>: Coleta URLs de artigos dos portais de notícias</li>
+<li><strong>📰 Scraping (Plays)</strong>: Extrai conteúdo e anúncios das páginas coletadas  </li>
+<li><strong>🗄️ Armazenamento</strong>: Salva dados no PostgreSQL e arquivos no MinIO</li>
+<li><strong>🔗 API Backend</strong>: Serve dados via FastAPI</li>
+<li><strong>🖥️ Frontend</strong>: Interface React para visualização</li>
+</ol>
+<p><img alt="Diagrama do Pipeline" src="../../assets/diagrama-pipeline.png" /></p>
+<h2 id="estrutura-de-dados">📊 Estrutura de Dados<a class="headerlink" href="#estrutura-de-dados" title="Permanent link">&para;</a></h2>
+<h3 id="modelos-principais-postgresql">Modelos Principais (PostgreSQL)<a class="headerlink" href="#modelos-principais-postgresql" title="Permanent link">&para;</a></h3>
+<p><strong>Portal</strong>: Informações dos portais de notícias</p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span> <span class="nb">id</span><span class="p">:</span> <span class="n">Integer</span> <span class="p">(</span><span class="n">Primary</span> <span class="n">Key</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Nome</span> <span class="n">do</span> <span class="n">portal</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">URL</span> <span class="p">(</span><span class="n">URL</span> <span class="n">base</span> <span class="n">do</span> <span class="n">portal</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">slug</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Identificador</span> <span class="n">único</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">created_at</span><span class="p">:</span> <span class="n">DateTime</span>
+</code></pre></div>
+
+<p><strong>URLQueue</strong>: Fila de URLs para processamento</p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span> <span class="nb">id</span><span class="p">:</span> <span class="n">Integer</span> <span class="p">(</span><span class="n">Primary</span> <span class="n">Key</span><span class="p">)</span>  
+<span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">URL</span> <span class="p">(</span><span class="n">URL</span> <span class="n">do</span> <span class="n">artigo</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">created_at</span><span class="p">:</span> <span class="n">DateTime</span>
+<span class="o">-</span> <span class="n">statuses</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">QueueStatus</span><span class="p">]</span> <span class="p">(</span><span class="n">Status</span> <span class="n">de</span> <span class="n">processamento</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Entry</strong>: Artigos de notícias processados</p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span> <span class="nb">id</span><span class="p">:</span> <span class="n">Integer</span> <span class="p">(</span><span class="n">Primary</span> <span class="n">Key</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">portal_id</span><span class="p">:</span> <span class="n">ForeignKey</span> <span class="p">(</span><span class="n">Portal</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Título</span> <span class="n">do</span> <span class="n">artigo</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">URL</span> <span class="p">(</span><span class="n">URL</span> <span class="n">do</span> <span class="n">artigo</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">description</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Subtítulo</span><span class="o">/</span><span class="n">resumo</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">body</span><span class="p">:</span> <span class="n">Text</span> <span class="p">(</span><span class="n">Corpo</span> <span class="n">completo</span> <span class="n">do</span> <span class="n">artigo</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">tags</span><span class="p">:</span> <span class="n">JSON</span> <span class="p">(</span><span class="n">Tags</span><span class="o">/</span><span class="n">categorias</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">screenshot</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Caminho</span> <span class="n">no</span> <span class="n">MinIO</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">created_at</span><span class="p">:</span> <span class="n">DateTime</span>
+</code></pre></div>
+
+<p><strong>Advertisement</strong>: Anúncios encontrados nos artigos</p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span> <span class="nb">id</span><span class="p">:</span> <span class="n">Integer</span> <span class="p">(</span><span class="n">Primary</span> <span class="n">Key</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">entry_id</span><span class="p">:</span> <span class="n">ForeignKey</span> <span class="p">(</span><span class="n">Entry</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">url</span><span class="p">:</span> <span class="n">URL</span> <span class="p">(</span><span class="n">URL</span> <span class="n">do</span> <span class="n">anúncio</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Título</span> <span class="n">do</span> <span class="n">anúncio</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">tag</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Categoria</span> <span class="n">do</span> <span class="n">anúncio</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">thumbnail</span><span class="p">:</span> <span class="n">URL</span> <span class="p">(</span><span class="n">URL</span> <span class="n">da</span> <span class="n">thumbnail</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">screenshot</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Caminho</span> <span class="n">no</span> <span class="n">MinIO</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">excerpt</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Descrição</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">category</span><span class="p">:</span> <span class="n">Integer</span> <span class="p">(</span><span class="n">Categoria</span> <span class="n">LLM</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">category_verbose</span><span class="p">:</span> <span class="n">String</span> <span class="p">(</span><span class="n">Descrição</span> <span class="n">da</span> <span class="n">categoria</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">created_at</span><span class="p">:</span> <span class="n">DateTime</span>
+</code></pre></div>
+
+<h2 id="etapa-1-spiders-coleta-de-urls">🕷️ ETAPA 1: Spiders - Coleta de URLs<a class="headerlink" href="#etapa-1-spiders-coleta-de-urls" title="Permanent link">&para;</a></h2>
+<h3 id="funcao-dos-spiders">Função dos Spiders<a class="headerlink" href="#funcao-dos-spiders" title="Permanent link">&para;</a></h3>
+<p>Os <strong>spiders</strong> são componentes Scrapy responsáveis por navegar nas páginas iniciais dos portais de notícias e coletar URLs de artigos válidos. Eles constituem o ponto de entrada do pipeline, identificando e filtrando links que serão posteriormente processados.</p>
+<h3 id="como-funcionam">🔧 Como Funcionam<a class="headerlink" href="#como-funcionam" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Navegação</strong>: Acessam a página inicial do portal (ex: <code>https://www.metropoles.com/</code>)</li>
+<li><strong>Extração</strong>: Identificam links de artigos usando seletores CSS/XPath</li>
+<li><strong>Filtragem</strong>: Aplicam regras para aceitar apenas URLs de notícias válidas</li>
+<li><strong>Armazenamento</strong>: Salvam URLs aprovadas na tabela <code>URLQueue</code></li>
+</ol>
+<h3 id="portais-suportados">📋 Portais Suportados<a class="headerlink" href="#portais-suportados" title="Permanent link">&para;</a></h3>
+<p><strong>✅ Funcionais:</strong>
+- Metrópoles (<code>metropolesspider</code>)
+- IG (<code>igspider</code>) 
+- MaisGoiás (<code>maisgoiasspider</code>)
+- AliadosBrasil (<code>aliadosbrasilspider</code>)
+- Veja (<code>vejaspider</code>)
+- R7 (<code>r7spider</code>)
+- UOL (<code>uolspider</code>)
+- Folha (<code>folhaspider</code>)</p>
+<h3 id="configuracao-dos-spiders">⚙️ Configuração dos Spiders<a class="headerlink" href="#configuracao-dos-spiders" title="Permanent link">&para;</a></h3>
+<p><strong>Estrutura Base:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MetropolesSpider</span><span class="p">(</span><span class="n">BaseSpider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;metropolesspider&quot;</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;https://www.metropoles.com/&quot;</span><span class="p">]</span>
+    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;metropoles.com&quot;</span><span class="p">]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">allow_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_url</span><span class="p">):</span>
+        <span class="c1"># Lógica de filtragem específica do portal</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="c1"># Extrai URLs usando seletores CSS</span>
+        <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s2">&quot;.noticia__titulo &gt; a&quot;</span><span class="p">):</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;href&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">url</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">allow_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+                <span class="k">yield</span> <span class="n">URLItem</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Pipeline de Processamento:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># pipelines.py</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">PostgresPipeline</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">process_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">spider</span><span class="p">):</span>
+        <span class="c1"># Verifica se URL já existe</span>
+        <span class="n">exists</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">URLQueue</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+            <span class="n">URLQueue</span><span class="o">.</span><span class="n">url</span> <span class="o">==</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">exists</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Cria nova entrada na fila</span>
+            <span class="n">URLQueue</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">])</span>
+
+        <span class="k">return</span> <span class="n">item</span>
+</code></pre></div>
+
+<h3 id="execucao">🚀 Execução<a class="headerlink" href="#execucao" title="Permanent link">&para;</a></h3>
+<p><strong>Comandos individuais:</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>crawl_metropoles<span class="w">  </span><span class="c1"># Coleta URLs do Metrópoles</span>
+make<span class="w"> </span>crawl_ig<span class="w">          </span><span class="c1"># Coleta URLs do IG</span>
+make<span class="w"> </span>crawl_veja<span class="w">        </span><span class="c1"># Coleta URLs da Veja</span>
+</code></pre></div>
+
+<p><strong>Execução em massa:</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>crawl_all_working<span class="w"> </span><span class="c1"># Todos os portais funcionais</span>
+</code></pre></div>
+
+<p><strong>Verificação:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1">-- Visualizar URLs coletadas</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">urlqueue</span><span class="p">;</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">urlqueue</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">created_at</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</code></pre></div>
+
+<h2 id="etapa-2-plays-extracao-de-conteudo-e-anuncios">🎭 ETAPA 2: Plays - Extração de Conteúdo e Anúncios<a class="headerlink" href="#etapa-2-plays-extracao-de-conteudo-e-anuncios" title="Permanent link">&para;</a></h2>
+<h3 id="funcao-dos-plays">Função dos Plays<a class="headerlink" href="#funcao-dos-plays" title="Permanent link">&para;</a></h3>
+<p>Os <strong>plays</strong> são componentes baseados em Playwright que acessam cada URL coletada pelos spiders e extraem tanto o conteúdo editorial quanto os anúncios presentes na página. Eles constituem o coração do sistema de análise, capturando dados estruturados para posterior classificação.</p>
+<h3 id="como-funcionam_1">🔧 Como Funcionam<a class="headerlink" href="#como-funcionam_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Seleção de URLs</strong>: Buscam URLs na <code>URLQueue</code> filtradas por domínio</li>
+<li><strong>Navegação</strong>: Usam Playwright para abrir as páginas em um browser real</li>
+<li><strong>Extração Dual</strong>:</li>
+<li><strong>Conteúdo Editorial</strong>: título, descrição, corpo, tags</li>
+<li><strong>Anúncios</strong>: título, URL, thumbnail, categoria</li>
+<li><strong>Armazenamento</strong>: Salvam dados nas tabelas <code>Entry</code> e <code>Advertisement</code></li>
+<li><strong>Screenshots</strong>: Capturam imagens das páginas no MinIO</li>
+</ol>
+<h3 id="estrutura-dos-dados-extraidos">📊 Estrutura dos Dados Extraídos<a class="headerlink" href="#estrutura-dos-dados-extraidos" title="Permanent link">&para;</a></h3>
+<p><strong>EntryItem (Conteúdo Editorial):</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">EntryItem</span><span class="p">:</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>           <span class="c1"># Título principal do artigo</span>
+    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span>            <span class="c1"># URL do artigo  </span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span>    <span class="c1"># Subtítulo/resumo</span>
+    <span class="n">body</span><span class="p">:</span> <span class="nb">str</span>          <span class="c1"># Corpo completo do texto</span>
+    <span class="n">tags</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>    <span class="c1"># Tags/categorias</span>
+    <span class="n">ads</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">AdItem</span><span class="p">]</span>  <span class="c1"># Anúncios encontrados</span>
+    <span class="n">screenshot_path</span><span class="p">:</span> <span class="nb">str</span> <span class="c1"># Caminho da screenshot</span>
+</code></pre></div>
+
+<p><strong>AdItem (Anúncios):</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@dataclass</span>  
+<span class="k">class</span><span class="w"> </span><span class="nc">AdItem</span><span class="p">:</span>
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>          <span class="c1"># Título do anúncio</span>
+    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span>           <span class="c1"># URL de destino</span>
+    <span class="n">thumbnail_url</span><span class="p">:</span> <span class="nb">str</span> <span class="c1"># URL da imagem</span>
+    <span class="n">tag</span><span class="p">:</span> <span class="nb">str</span>          <span class="c1"># Categoria/origem (ex: &quot;Taboola&quot;)</span>
+    <span class="n">screenshot_path</span><span class="p">:</span> <span class="nb">str</span> <span class="c1"># Screenshot do anúncio</span>
+    <span class="n">excerpt</span><span class="p">:</span> <span class="nb">str</span>      <span class="c1"># Descrição/texto</span>
+</code></pre></div>
+
+<h3 id="exemplo-de-play-funcional">🎯 Exemplo de Play Funcional<a class="headerlink" href="#exemplo-de-play-funcional" title="Permanent link">&para;</a></h3>
+<p><strong>Metrópoles Play:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MetropolesPlay</span><span class="p">(</span><span class="n">BasePlay</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;metropoles&quot;</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">match</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;metropoles.com&quot;</span> <span class="ow">in</span> <span class="n">url</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EntryItem</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">sync_playwright</span><span class="p">()</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
+            <span class="n">browser</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">launch_browser</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+            <span class="n">page</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
+            <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">180_000</span><span class="p">)</span>
+
+            <span class="c1"># Extração do conteúdo editorial</span>
+            <span class="n">entry_title</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;//h1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">inner_text</span><span class="p">()</span>
+
+            <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">description</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;.noticiaCabecalho__subtitulo&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">inner_text</span><span class="p">()</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+            <span class="c1"># Corpo do artigo</span>
+            <span class="n">body_paragraphs</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">selectors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;.m-content&quot;</span><span class="p">,</span> <span class="s2">&quot;article&quot;</span><span class="p">,</span> <span class="s2">&quot;.article-content&quot;</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">selector</span> <span class="ow">in</span> <span class="n">selectors</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">elements</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">selector</span><span class="si">}</span><span class="s2"> p&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+                    <span class="n">body_paragraphs</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">inner_text</span><span class="p">()</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">elements</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">body_paragraphs</span><span class="p">:</span>
+                        <span class="k">break</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+            <span class="n">body</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">body_paragraphs</span><span class="p">)</span>
+
+            <span class="c1"># Extração de anúncios (Taboola)</span>
+            <span class="n">ad_items</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;#taboola-below-article-thumbnails&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scroll_into_view_if_needed</span><span class="p">()</span>
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+                <span class="n">ad_elements</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">locator</span><span class="p">(</span><span class="s2">&quot;.videoCube&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+                <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ad_elements</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">is_visible</span><span class="p">():</span>
+                        <span class="n">content</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">inner_html</span><span class="p">()</span>
+                        <span class="n">ad_item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_items</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">ad_item</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+                            <span class="n">ad_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ad_item</span><span class="p">)</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+            <span class="k">return</span> <span class="n">EntryItem</span><span class="p">(</span>
+                <span class="n">title</span><span class="o">=</span><span class="n">entry_title</span><span class="p">,</span>
+                <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span> 
+                <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span>
+                <span class="n">tags</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">ads</span><span class="o">=</span><span class="n">ad_items</span><span class="p">,</span>
+                <span class="n">url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span>
+            <span class="p">)</span>
+</code></pre></div>
+
+<h3 id="processo-de-armazenamento">🗄️ Processo de Armazenamento<a class="headerlink" href="#processo-de-armazenamento" title="Permanent link">&para;</a></h3>
+<p><strong>1. Seleção de URLs para Processamento:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># scrape_no_openai.py</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_urls_for_platform</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Busca URLs da URLQueue filtradas por domínio&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">URLQueue</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">URLQueue</span><span class="o">.</span><span class="n">statuses</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+        <span class="n">URLQueue</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">like</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;%</span><span class="si">{</span><span class="n">domain</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">),</span>
+        <span class="n">QueueStatus</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s2">&quot;created&quot;</span> 
+    <span class="p">)</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>2. Processamento e Armazenamento:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Para cada URL processada:</span>
+<span class="mf">1.</span> <span class="n">Play</span> <span class="n">extrai</span> <span class="n">conteúdo</span> <span class="err">→</span> <span class="n">EntryItem</span>
+<span class="mf">2.</span> <span class="n">Salva</span> <span class="n">Entry</span> <span class="n">no</span> <span class="n">PostgreSQL</span>
+<span class="mf">3.</span> <span class="n">Para</span> <span class="n">cada</span> <span class="n">anúncio</span> <span class="err">→</span> <span class="n">Advertisement</span> <span class="n">no</span> <span class="n">PostgreSQL</span>  
+<span class="mf">4.</span> <span class="n">Screenshots</span> <span class="n">salvos</span> <span class="n">no</span> <span class="n">MinIO</span>
+<span class="mf">5.</span> <span class="n">Atualiza</span> <span class="n">QueueStatus</span> <span class="n">para</span> <span class="s2">&quot;completed&quot;</span>
+</code></pre></div>
+
+<h3 id="execucao_1">🚀 Execução<a class="headerlink" href="#execucao_1" title="Permanent link">&para;</a></h3>
+<p><strong>Comandos por portal:</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>scrape_metropoles<span class="w">     </span><span class="c1"># Scraping do Metrópoles</span>
+make<span class="w"> </span>scrape_ig<span class="w">            </span><span class="c1"># Scraping do IG  </span>
+make<span class="w"> </span>scrape_maisgoias<span class="w">     </span><span class="c1"># Scraping do MaisGoiás</span>
+</code></pre></div>
+
+<p><strong>Execução em massa:</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>scrape_all_working<span class="w">   </span><span class="c1"># Todos os portais funcionais</span>
+</code></pre></div>
+
+<p><strong>Comando direto (com argumentos):</strong></p>
+<div class="codehilite"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>scraper<span class="w"> </span>python<span class="w"> </span>scrape_no_openai.py<span class="w"> </span>--platform<span class="w"> </span>metropoles.com
+</code></pre></div>
+
+<h3 id="monitoramento">📈 Monitoramento<a class="headerlink" href="#monitoramento" title="Permanent link">&para;</a></h3>
+<p><strong>Verificação no banco:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1">-- Artigos processados</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">entry</span><span class="p">;</span>
+
+<span class="c1">-- Anúncios encontrados  </span>
+<span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">advertisement</span><span class="p">;</span>
+
+<span class="c1">-- Status por portal</span>
+<span class="k">SELECT</span><span class="w"> </span>
+<span class="w">    </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">url</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="s1">&#39;https://([^/]+)&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">portal</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_urls</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">urlqueue</span><span class="w"> </span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">portal</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>Verificação no MinIO:</strong>
+- Console: <code>http://localhost:9001</code>
+- Credenciais: <code>minioadmin/minioadmin</code>
+- Buckets organizados por portal: <code>metropoles_com/</code>, <code>ig_com_br/</code>, etc.</p>
+<h2 id="etapa-3-armazenamento-de-dados">🗄️ ETAPA 3: Armazenamento de Dados<a class="headerlink" href="#etapa-3-armazenamento-de-dados" title="Permanent link">&para;</a></h2>
+<h3 id="postgresql-banco-principal">PostgreSQL - Banco Principal<a class="headerlink" href="#postgresql-banco-principal" title="Permanent link">&para;</a></h3>
+<p>O Check-up utiliza PostgreSQL como banco principal para armazenar dados estruturados. O schema é definido em <code>models.py</code> usando SQLAlchemy ORM.</p>
+<p><strong>Fluxo de Armazenamento:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nf">graph</span><span class="w"> </span><span class="n">TD</span>
+<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">Spider</span><span class="w"> </span><span class="n">coleta</span><span class="w"> </span><span class="n">URL</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">[</span><span class="n">URLQueue</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Fila</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">URLs</span><span class="p">]</span>
+<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">Play</span><span class="w"> </span><span class="n">processa</span><span class="w"> </span><span class="n">URL</span><span class="p">]</span>
+<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="n">Entry</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Artigo</span><span class="w"> </span><span class="n">principal</span><span class="p">]</span>
+<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">[</span><span class="n">Advertisement</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Anúncios</span><span class="w"> </span><span class="n">encontrados</span><span class="p">]</span>
+<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="n">Portal</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Info</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">portal</span><span class="p">]</span>
+<span class="w">    </span><span class="n">E</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span>
+</code></pre></div>
+
+<p><strong>Relacionamentos:</strong>
+- <code>Portal</code> 1:N <code>Entry</code> (Um portal tem muitos artigos)
+- <code>Entry</code> 1:N <code>Advertisement</code> (Um artigo tem muitos anúncios)
+- <code>URLQueue</code> 1:N <code>QueueStatus</code> (Uma URL tem histórico de status)</p>
+<h3 id="minio-armazenamento-de-arquivos">MinIO - Armazenamento de Arquivos<a class="headerlink" href="#minio-armazenamento-de-arquivos" title="Permanent link">&para;</a></h3>
+<p>O MinIO é usado para armazenar screenshots e mídias capturadas durante o scraping.</p>
+<p><strong>Estrutura de Buckets:</strong></p>
+<div class="codehilite"><pre><span></span><code>scraped-articles/
+├── metropoles_com/
+│   ├── 2025/01/07/
+│   │   ├── entry_screenshots/
+│   │   └── ad_screenshots/
+├── ig_com_br/
+│   ├── 2025/01/07/
+│   │   ├── entry_screenshots/
+│   │   └── ad_screenshots/
+</code></pre></div>
+
+<p><strong>Processo de Upload:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># storage.py</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">upload_file</span><span class="p">(</span><span class="n">local_path</span><span class="p">,</span> <span class="n">minio_path</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Upload de arquivo para MinIO&quot;&quot;&quot;</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">fput_object</span><span class="p">(</span>
+        <span class="n">bucket_name</span><span class="o">=</span><span class="s2">&quot;scraped-articles&quot;</span><span class="p">,</span>
+        <span class="n">object_name</span><span class="o">=</span><span class="n">minio_path</span><span class="p">,</span>
+        <span class="n">file_path</span><span class="o">=</span><span class="n">local_path</span>
+    <span class="p">)</span>
+</code></pre></div>
+
+<h3 id="status-de-processamento">🔄 Status de Processamento<a class="headerlink" href="#status-de-processamento" title="Permanent link">&para;</a></h3>
+<p>O sistema mantém controle detalhado do status de cada URL através da tabela <code>QueueStatus</code>:</p>
+<p><strong>Estados possíveis:</strong>
+- <code>created</code>: URL coletada, aguardando processamento
+- <code>processing</code>: URL sendo processada por um play
+- <code>completed</code>: Processamento concluído com sucesso
+- <code>failed</code>: Erro durante processamento
+- <code>retry</code>: Agendada para nova tentativa</p>
+<p><strong>Exemplo de consulta de status:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span>
+<span class="w">    </span><span class="n">u</span><span class="p">.</span><span class="n">url</span><span class="p">,</span>
+<span class="w">    </span><span class="n">qs</span><span class="p">.</span><span class="n">value</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">status</span><span class="p">,</span>
+<span class="w">    </span><span class="n">qs</span><span class="p">.</span><span class="n">created_at</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">urlqueue</span><span class="w"> </span><span class="n">u</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">queuestatus</span><span class="w"> </span><span class="n">qs</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">qs</span><span class="p">.</span><span class="n">url_queue_id</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">qs</span><span class="p">.</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;completed&#39;</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">qs</span><span class="p">.</span><span class="n">created_at</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<h2 id="etapa-4-api-backend-fastapi">🔗 ETAPA 4: API Backend (FastAPI)<a class="headerlink" href="#etapa-4-api-backend-fastapi" title="Permanent link">&para;</a></h2>
+<h3 id="estrutura-da-api">Estrutura da API<a class="headerlink" href="#estrutura-da-api" title="Permanent link">&para;</a></h3>
+<p>O backend em FastAPI (<code>web/server/main.py</code>) serve como ponte entre os dados armazenados e o frontend, fornecendo endpoints RESTful para acesso aos dados coletados.</p>
+<p><strong>Endpoints Principais:</strong></p>
+<p><strong>1. Listar Portais:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/portais&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">listar_portais</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Retorna lista de portais com dados disponíveis&quot;&quot;&quot;</span>
+    <span class="c1"># Busca diretamente nos buckets do MinIO</span>
+    <span class="n">portais</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">minio_client</span><span class="o">.</span><span class="n">list_objects</span><span class="p">(</span><span class="n">MINIO_BUCKET</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="n">portal</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">object_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">portais</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">portal</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">portais</span><span class="p">))</span>
+</code></pre></div>
+
+<p><strong>2. Buscar Notícias:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/noticias/</span><span class="si">{portal}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">buscar_noticias</span><span class="p">(</span>
+    <span class="n">portal</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">q</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Termo de busca&quot;</span><span class="p">),</span>
+    <span class="n">page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Busca notícias de um portal específico com paginação&quot;&quot;&quot;</span>
+    <span class="c1"># Busca arquivos JSON no MinIO do portal especificado</span>
+    <span class="c1"># Aplica filtros de busca se fornecidos</span>
+    <span class="c1"># Retorna dados paginados</span>
+</code></pre></div>
+
+<p><strong>3. Detalhes da Notícia:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/noticia/</span><span class="si">{portal}</span><span class="s2">/</span><span class="si">{filename}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">obter_noticia</span><span class="p">(</span><span class="n">portal</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Retorna dados completos de uma notícia específica&quot;&quot;&quot;</span>
+    <span class="c1"># Busca arquivo JSON específico no MinIO</span>
+    <span class="c1"># Retorna conteúdo completo incluindo anúncios</span>
+</code></pre></div>
+
+<h3 id="fluxo-de-dados-da-api">🔄 Fluxo de Dados da API<a class="headerlink" href="#fluxo-de-dados-da-api" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="n">graph</span><span class="w"> </span><span class="n">TD</span>
+<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">Frontend</span><span class="w"> </span><span class="n">Request</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">[</span><span class="n">FastAPI</span><span class="w"> </span><span class="n">Endpoint</span><span class="p">]</span>
+<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">Consulta</span><span class="w"> </span><span class="n">MinIO</span><span class="p">]</span>
+<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="n">Processa</span><span class="w"> </span><span class="n">Dados</span><span class="w"> </span><span class="n">JSON</span><span class="p">]</span>
+<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">[</span><span class="n">Aplica</span><span class="w"> </span><span class="n">Filtros</span><span class="o">/</span><span class="n">Paginação</span><span class="p">]</span>
+<span class="w">    </span><span class="n">E</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="n">Retorna</span><span class="w"> </span><span class="n">Response</span><span class="p">]</span>
+<span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">G</span><span class="p">[</span><span class="n">Frontend</span><span class="w"> </span><span class="n">Atualiza</span><span class="w"> </span><span class="n">UI</span><span class="p">]</span>
+</code></pre></div>
+
+<h3 id="formato-de-resposta">📊 Formato de Resposta<a class="headerlink" href="#formato-de-resposta" title="Permanent link">&para;</a></h3>
+<p><strong>Estrutura de Notícia:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Título da notícia&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://portal.com/noticia&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Subtítulo ou resumo&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;body&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Corpo completo da notícia...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;política&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;saúde&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-07T10:30:00Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;portal&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;metropoles_com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ads&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anúncio de produto&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://anuncio.com&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;tag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Taboola&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;thumbnail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://thumb.com/img.jpg&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="etapa-5-frontend-react">🖥️ ETAPA 5: Frontend (React)<a class="headerlink" href="#etapa-5-frontend-react" title="Permanent link">&para;</a></h2>
+<h3 id="arquitetura-do-frontend">Arquitetura do Frontend<a class="headerlink" href="#arquitetura-do-frontend" title="Permanent link">&para;</a></h3>
+<p>O frontend em React (<code>web/client/src/</code>) oferece interface intuitiva para explorar os dados coletados, com foco na visualização de notícias e anúncios de saúde.</p>
+<p><strong>Componentes Principais:</strong></p>
+<p><strong>1. Home.tsx - Página Principal:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">Home</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">portais</span><span class="p">,</span><span class="w"> </span><span class="nx">setPortais</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">&lt;</span><span class="nt">string</span><span class="err">[]</span><span class="p">&gt;([]);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">noticias</span><span class="p">,</span><span class="w"> </span><span class="nx">setNoticias</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">&lt;</span><span class="nt">any</span><span class="err">[]</span><span class="p">&gt;([]);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">portalSelecionado</span><span class="p">,</span><span class="w"> </span><span class="nx">setPortalSelecionado</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">&lt;</span><span class="nt">string</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="na">null</span><span class="p">&gt;(</span><span class="kc">null</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Busca lista de portais disponíveis</span>
+<span class="w">  </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/portais`</span><span class="p">)</span>
+<span class="w">      </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+<span class="w">      </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">setPortais</span><span class="p">);</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+
+<span class="w">  </span><span class="c1">// Busca notícias quando portal é selecionado</span>
+<span class="w">  </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">portalSelecionado</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">fetch</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">API_URL</span><span class="si">}</span><span class="sb">/noticias/</span><span class="si">${</span><span class="nx">portalSelecionado</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+<span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">setNoticias</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">portalSelecionado</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p><strong>2. Funcionalidades Implementadas:</strong></p>
+<ul>
+<li><strong>Seleção de Portal</strong>: Tabs para escolher entre portais disponíveis</li>
+<li><strong>Busca</strong>: Campo de texto para filtrar notícias por título/conteúdo</li>
+<li><strong>Paginação</strong>: Navegação através de grandes volumes de dados</li>
+<li><strong>Visualização Detalhada</strong>: Modal com conteúdo completo da notícia</li>
+<li><strong>Estatísticas</strong>: Contadores de notícias por portal</li>
+</ul>
+<h3 id="interface-do-usuario">🎨 Interface do Usuário<a class="headerlink" href="#interface-do-usuario" title="Permanent link">&para;</a></h3>
+<p><strong>Layout Principal:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="err">┌─────────────────────────────────────────┐</span>
+<span class="err">│</span><span class="w"> </span><span class="n">Check</span><span class="o">-</span><span class="n">up</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Análise</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Anúncios</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Saúde</span><span class="w"> </span><span class="err">│</span>
+<span class="err">├─────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w"> </span><span class="p">[</span><span class="n">Metrópoles</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">IG</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">Veja</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">R7</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">UOL</span><span class="p">]...</span><span class="w">  </span><span class="err">│</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Tabs</span><span class="w"> </span><span class="n">dos</span><span class="w"> </span><span class="n">portais</span>
+<span class="err">├─────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w"> </span><span class="err">🔍</span><span class="w"> </span><span class="p">[</span><span class="n">___________________</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">Buscar</span><span class="p">]</span><span class="w">       </span><span class="err">│</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Campo</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">busca</span>
+<span class="err">├─────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w"> </span><span class="err">┌─────────────────────────────────────┐</span><span class="w"> </span><span class="err">│</span>
+<span class="err">│</span><span class="w"> </span><span class="err">│</span><span class="w"> </span><span class="err">📰</span><span class="w"> </span><span class="n">Título</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">Notícia</span><span class="w">               </span><span class="err">│</span><span class="w"> </span><span class="err">│</span>
+<span class="err">│</span><span class="w"> </span><span class="err">│</span><span class="w"> </span><span class="err">🏷️</span><span class="w">  </span><span class="n">Portal</span><span class="o">:</span><span class="w"> </span><span class="n">Metrópoles</span><span class="w">             </span><span class="err">│</span><span class="w"> </span><span class="err">│</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Cards</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">notícias</span>
+<span class="err">│</span><span class="w"> </span><span class="err">│</span><span class="w"> </span><span class="err">📅</span><span class="w"> </span><span class="mo">07</span><span class="o">/</span><span class="mo">01</span><span class="o">/</span><span class="mi">2025</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="err">🔗</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="n">anúncios</span><span class="w">      </span><span class="err">│</span><span class="w"> </span><span class="err">│</span>
+<span class="err">│</span><span class="w"> </span><span class="err">│</span><span class="w"> </span><span class="p">[</span><span class="n">Ver</span><span class="w"> </span><span class="n">Detalhes</span><span class="p">]</span><span class="w">                     </span><span class="err">│</span><span class="w"> </span><span class="err">│</span>
+<span class="err">│</span><span class="w"> </span><span class="err">└─────────────────────────────────────┘</span><span class="w"> </span><span class="err">│</span>
+<span class="err">├─────────────────────────────────────────┤</span>
+<span class="err">│</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="err">→</span><span class="w">                       </span><span class="err">│</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Paginação</span>
+<span class="err">└─────────────────────────────────────────┘</span>
+</code></pre></div>
+
+<h3 id="fluxo-de-interacao">🔄 Fluxo de Interação<a class="headerlink" href="#fluxo-de-interacao" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Carregamento Inicial</strong>: Busca lista de portais disponíveis</li>
+<li><strong>Seleção de Portal</strong>: Usuário clica em tab do portal desejado</li>
+<li><strong>Exibição de Notícias</strong>: Lista paginada de notícias do portal</li>
+<li><strong>Busca</strong>: Usuário pode filtrar por termos específicos</li>
+<li><strong>Detalhamento</strong>: Modal mostra conteúdo completo + anúncios</li>
+<li><strong>Navegação</strong>: Paginação para explorar mais resultados</li>
+</ol>
+<h3 id="recursos-de-ux">📱 Recursos de UX<a class="headerlink" href="#recursos-de-ux" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Loading States</strong>: Skeletons durante carregamento</li>
+<li><strong>Error Handling</strong>: Mensagens de erro amigáveis  </li>
+<li><strong>Responsive Design</strong>: Adaptável a diferentes tamanhos de tela</li>
+<li><strong>Busca Reativa</strong>: Resultados atualizados em tempo real</li>
+<li><strong>Indicadores Visuais</strong>: Badges para número de anúncios</li>
+</ul>
+<h2 id="fluxo-completo-de-dados">🔄 FLUXO COMPLETO DE DADOS<a class="headerlink" href="#fluxo-completo-de-dados" title="Permanent link">&para;</a></h2>
+<h3 id="pipeline-end-to-end">Pipeline End-to-End<a class="headerlink" href="#pipeline-end-to-end" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="n">graph</span><span class="w"> </span><span class="n">TD</span>
+<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">Portal</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Notícias</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">[</span><span class="n">Spider</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Scrapy</span><span class="p">]</span>
+<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">URLQueue</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">PostgreSQL</span><span class="p">]</span>
+<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="n">Play</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Playwright</span><span class="p">]</span>
+<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">[</span><span class="n">Entry</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">PostgreSQL</span><span class="p">]</span>
+<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="n">Advertisement</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">PostgreSQL</span><span class="p">]</span>
+<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">G</span><span class="p">[</span><span class="n">Screenshots</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">MinIO</span><span class="p">]</span>
+<span class="w">    </span><span class="n">E</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span><span class="p">[</span><span class="n">FastAPI</span><span class="w"> </span><span class="n">Backend</span><span class="p">]</span>
+<span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span>
+<span class="w">    </span><span class="n">G</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span>
+<span class="w">    </span><span class="n">H</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">I</span><span class="p">[</span><span class="n">React</span><span class="w"> </span><span class="n">Frontend</span><span class="p">]</span>
+<span class="w">    </span><span class="n">I</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">J</span><span class="p">[</span><span class="n">Interface</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="n">Usuário</span><span class="p">]</span>
+
+<span class="w">    </span><span class="n">style</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="n">fill</span><span class="o">:</span><span class="err">#</span><span class="n">e1f5fe</span>
+<span class="w">    </span><span class="n">style</span><span class="w"> </span><span class="n">J</span><span class="w"> </span><span class="n">fill</span><span class="o">:</span><span class="err">#</span><span class="n">e8f5e8</span>
+<span class="w">    </span><span class="n">style</span><span class="w"> </span><span class="n">H</span><span class="w"> </span><span class="n">fill</span><span class="o">:</span><span class="err">#</span><span class="n">fff3e0</span>
+</code></pre></div>
+
+<h3 id="cronograma-de-execucao">⏱️ Cronograma de Execução<a class="headerlink" href="#cronograma-de-execucao" title="Permanent link">&para;</a></h3>
+<p><strong>1. Configuração (única vez):</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>setup<span class="w">  </span><span class="c1"># ~5-10 minutos</span>
+</code></pre></div>
+
+<p><strong>2. Coleta de URLs (diária):</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>crawl_all_working<span class="w">  </span><span class="c1"># ~10-15 minutos</span>
+<span class="c1"># Resultado: ~500-1000 URLs novas por portal</span>
+</code></pre></div>
+
+<p><strong>3. Extração de Conteúdo (contínua):</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>scrape_all_working<span class="w">  </span><span class="c1"># ~2-4 horas</span>
+<span class="c1"># Resultado: ~100-200 artigos processados por hora</span>
+</code></pre></div>
+
+<p><strong>4. Visualização (imediata):</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Frontend disponível em: http://localhost:5173</span>
+<span class="c1"># API disponível em: http://localhost:8000</span>
+</code></pre></div>
+
+<h2 id="comandos-de-execucao">🚀 Comandos de Execução<a class="headerlink" href="#comandos-de-execucao" title="Permanent link">&para;</a></h2>
+<h3 id="setup-inicial">Setup Inicial<a class="headerlink" href="#setup-inicial" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Configuração completa do ambiente</span>
+make<span class="w"> </span>setup
+
+<span class="c1"># Verificar se serviços estão rodando</span>
+docker<span class="w"> </span>compose<span class="w"> </span>ps
+
+<span class="c1"># Acessar logs em tempo real</span>
+docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>-f
+</code></pre></div>
+
+<h3 id="execucao-do-pipeline">Execução do Pipeline<a class="headerlink" href="#execucao-do-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>1. Coleta de URLs (Crawling):</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Todos os portais funcionais</span>
+make<span class="w"> </span>crawl_all_working
+
+<span class="c1"># Portais individuais</span>
+make<span class="w"> </span>crawl_metropoles
+make<span class="w"> </span>crawl_ig
+make<span class="w"> </span>crawl_veja
+make<span class="w"> </span>crawl_uol
+</code></pre></div>
+
+<p><strong>2. Extração de Conteúdo (Scraping):</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Todos os portais funcionais  </span>
+make<span class="w"> </span>scrape_all_working
+
+<span class="c1"># Portais individuais</span>
+make<span class="w"> </span>scrape_metropoles
+make<span class="w"> </span>scrape_ig
+make<span class="w"> </span>scrape_maisgoias
+</code></pre></div>
+
+<p><strong>3. Pipeline Completo:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Executa crawl + scraping sequencialmente</span>
+make<span class="w"> </span>pipeline_complete
+
+<span class="c1"># Workflow otimizado</span>
+make<span class="w"> </span>collect_working
+</code></pre></div>
+
+<h3 id="monitoramento-e-debugging">Monitoramento e Debugging<a class="headerlink" href="#monitoramento-e-debugging" title="Permanent link">&para;</a></h3>
+<p><strong>Acesso ao container:</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>bash
+</code></pre></div>
+
+<p><strong>Verificações no banco:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Dentro do container</span>
+python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<span class="s2">from models import *</span>
+<span class="s2">from sqlalchemy import create_engine</span>
+<span class="s2">from sqlalchemy.orm import Session</span>
+<span class="s2">from decouple import config</span>
+
+<span class="s2">engine = create_engine(config(&#39;DATABASE_URL&#39;))</span>
+<span class="s2">session = Session(engine)</span>
+
+<span class="s2">print(&#39;URLs na fila:&#39;, URLQueue.select().count())</span>
+<span class="s2">print(&#39;Artigos processados:&#39;, Entry.select().count()) </span>
+<span class="s2">print(&#39;Anúncios encontrados:&#39;, Advertisement.select().count())</span>
+<span class="s2">&quot;</span>
+</code></pre></div>
+
+<p><strong>Verificação do MinIO:</strong>
+- Interface: <code>http://localhost:9001</code>
+- Credenciais: <code>minioadmin/minioadmin</code></p>
+<p><strong>Frontend e API:</strong>
+- Frontend: <code>http://localhost:5173</code>
+- API: <code>http://localhost:8000</code>
+- Docs da API: <code>http://localhost:8000/docs</code></p>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<p><strong>Problema: Playwright browsers não instalados</strong></p>
+<div class="codehilite"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>down
+docker<span class="w"> </span>compose<span class="w"> </span>build<span class="w"> </span>--no-cache
+make<span class="w"> </span>start
+</code></pre></div>
+
+<p><strong>Problema: Banco não conecta</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>wait-for-db
+<span class="c1"># ou</span>
+make<span class="w"> </span>stop<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>start
+</code></pre></div>
+
+<p><strong>Problema: MinIO não acessível</strong></p>
+<div class="codehilite"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>ps
+<span class="c1"># Verificar se container healthcheck_minio está &quot;healthy&quot;</span>
+</code></pre></div>
+
+<h2 id="configuracao-e-customizacao">🔧 Configuração e Customização<a class="headerlink" href="#configuracao-e-customizacao" title="Permanent link">&para;</a></h2>
+<h3 id="variaveis-de-ambiente-env">Variáveis de Ambiente (.env)<a class="headerlink" href="#variaveis-de-ambiente-env" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Banco de dados</span>
+<span class="nv">DATABASE_URL</span><span class="o">=</span>postgresql://postgres:supersecret@healthcheck_db:5432/healthcheck
+
+<span class="c1"># MinIO</span>
+<span class="nv">MINIO_ENDPOINT</span><span class="o">=</span>minio:9000
+<span class="nv">MINIO_ACCESS_KEY</span><span class="o">=</span>minioadmin
+<span class="nv">MINIO_SECRET_KEY</span><span class="o">=</span>minioadmin
+<span class="nv">MINIO_SECURE</span><span class="o">=</span>False
+
+<span class="c1"># Opcional: OpenAI para classificação</span>
+<span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk-...
+
+<span class="c1"># Credenciais de portais (se necessário)</span>
+<span class="nv">FOLHA_USERNAME</span><span class="o">=</span>usuario
+<span class="nv">FOLHA_PASSWORD</span><span class="o">=</span>senha
+</code></pre></div>
+
+<h3 id="adicionando-novo-portal">Adicionando Novo Portal<a class="headerlink" href="#adicionando-novo-portal" title="Permanent link">&para;</a></h3>
+<p><strong>1. Criar Spider:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># spiders/novoportal.py</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">NovoPortalSpider</span><span class="p">(</span><span class="n">BaseSpider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;novoportalspider&quot;</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;https://novoportal.com/&quot;</span><span class="p">]</span>
+    <span class="c1"># ... implementação específica</span>
+</code></pre></div>
+
+<p><strong>2. Criar Play:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># plays/novoportal.py</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">NovoPortalPlay</span><span class="p">(</span><span class="n">BasePlay</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;novoportal&quot;</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">match</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;novoportal.com&quot;</span> <span class="ow">in</span> <span class="n">url</span>
+    <span class="c1"># ... implementação específica</span>
+</code></pre></div>
+
+<p><strong>3. Adicionar comandos no Makefile:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nf">crawl_novoportal</span><span class="o">:</span>
+<span class="w">    </span>docker<span class="w"> </span>compose<span class="w"> </span>run<span class="w"> </span>scraper<span class="w"> </span>python<span class="w"> </span>crawl.py<span class="w"> </span>novoportalspider
+
+<span class="nf">scrape_novoportal</span><span class="o">:</span>
+<span class="w">    </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>scraper<span class="w"> </span>python<span class="w"> </span>scrape_no_openai.py<span class="w"> </span>--platform<span class="w"> </span>novoportal.com
+</code></pre></div>
+
+<p><strong>4. Testar:</strong></p>
+<div class="codehilite"><pre><span></span><code>make<span class="w"> </span>crawl_novoportal
+make<span class="w"> </span>scrape_novoportal
+</code></pre></div>
+
+<h2 id="metricas-e-analises">📈 Métricas e Análises<a class="headerlink" href="#metricas-e-analises" title="Permanent link">&para;</a></h2>
+<h3 id="consultas-uteis">Consultas Úteis<a class="headerlink" href="#consultas-uteis" title="Permanent link">&para;</a></h3>
+<p><strong>Resumo geral:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_portais</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_artigos</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_anuncios</span><span class="p">,</span>
+<span class="w">    </span><span class="k">AVG</span><span class="p">(</span><span class="n">ads_por_artigo</span><span class="p">.</span><span class="k">count</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">media_anuncios_por_artigo</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">portal</span><span class="w"> </span><span class="n">p</span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">portal_id</span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">advertisement</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">entry_id</span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="n">entry_id</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">count</span><span class="w"> </span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">advertisement</span><span class="w"> </span>
+<span class="w">    </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">entry_id</span>
+<span class="p">)</span><span class="w"> </span><span class="n">ads_por_artigo</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ads_por_artigo</span><span class="p">.</span><span class="n">entry_id</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>Top portais por volume:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span>
+<span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">name</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">artigos</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">anuncios</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">portal</span><span class="w"> </span><span class="n">p</span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">portal_id</span><span class="w">  </span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">advertisement</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">entry_id</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">name</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">artigos</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>Evolução temporal:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span>
+<span class="w">    </span><span class="nb">DATE</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">created_at</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">data</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">artigos_processados</span><span class="p">,</span>
+<span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">anuncios_encontrados</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="n">e</span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">advertisement</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">entry_id</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">created_at</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="k">CURRENT_DATE</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="s1">&#39;7 days&#39;</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="nb">DATE</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">created_at</span><span class="p">)</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<h2 id="proximos-passos">🎯 Próximos Passos<a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h2>
+<h3 id="melhorias-planejadas">Melhorias Planejadas<a class="headerlink" href="#melhorias-planejadas" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Classificação Automática</strong>: Integração com LLM para categorização de anúncios</li>
+<li><strong>Dashboard Analytics</strong>: Painel com métricas em tempo real</li>
+<li><strong>Alertas</strong>: Notificações para anúncios suspeitos de desinformação  </li>
+<li><strong>API Pública</strong>: Endpoints para acesso externo aos dados</li>
+<li><strong>Exportação</strong>: Funcionalidades para download de relatórios</li>
+</ol>
+<h3 id="escalabilidade">Escalabilidade<a class="headerlink" href="#escalabilidade" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Processamento Paralelo</strong>: Multiple workers para scraping</li>
+<li><strong>Cache Redis</strong>: Cache de consultas frequentes</li>
+<li><strong>CDN</strong>: Distribuição de screenshots via CDN</li>
+<li><strong>Monitoring</strong>: Prometheus + Grafana para métricas</li>
+<li><strong>Auto-scaling</strong>: Ajuste automático de recursos baseado na carga</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/lelamo2002/check-up" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
